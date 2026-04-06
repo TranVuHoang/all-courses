@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.menu-tren {
+  height: 30px;
+  background: #2fa1b3;
+  width: 100%;
+}
+.menu-ngang {
+  display: flex;
+  list-style: none;
+  width: 960px;
+  margin: 0 auto;
+  text-align: center;
+}
+.menu-ngang a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 13px;
+  /* line-height: 30px; */
+  display: inline-block;
+  padding: 6px;
+  padding-bottom: 8px;
+}
+.menu-ngang a:hover {
+  background: #218493;
+  transition: 0.5s ease;
+  padding-top: 3px;
+  padding-bottom: 11px;
+}

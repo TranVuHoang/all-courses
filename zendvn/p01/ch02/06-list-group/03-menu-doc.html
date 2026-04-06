@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Example 03: Menu ngang</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .block {
+        width: 800px;
+        margin: 20px auto;
+        min-height: 250px;
+        border: 2px solid rgb(0, 255, 255);
+        text-align: center;
+      }
+      .menu {
+        list-style-position: outside;
+        list-style-type: none;
+        margin: 20px auto;
+        display: flex;
+        justify-content: center;
+      }
+      .menu li {
+        border: 1px solid #000;
+        padding: 10px;
+      }
+      .active {
+        font-weight: bold;
+        background: green;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="block">
+      <h1>Tạo menu ngang</h1>
+      <ul class="menu">
+        <li>Home</li>
+        <li class="active">About Us</li>
+        <li>Product</li>
+        <li>Specials</li>
+        <li>Contact</li>
+      </ul>
+    </div>
+  </body>
+</html>

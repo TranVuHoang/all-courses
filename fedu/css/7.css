@@ -1,0 +1,42 @@
+h2 {
+  width: 600px;
+  margin-left: 450px;
+  /* margin: 0 auto; */
+  font-family: Courier, monospace;
+  /* font-family: monospace; */
+  /* color: red; */
+}
+p {
+  width: 500px;
+  margin-left: 450px;
+  /* font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; */
+  font-family: fantasy;
+}
+ul {
+  margin-left: 430px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 13px;
+  color: #808080;
+}
+hr {
+  width: 500px;
+  margin-left: 450px;
+}
+img {
+  width: 500px;
+  margin-left: 450px;
+}
+.img-group {
+  display: flex;
+  width: 600px;
+  height: 350px;
+}
+.img-1 {
+  width: 190px;
+  margin-right: 10px;
+  object-fit: cover;
+}
+.img-2 {
+  width: 400px;
+  margin-left: 0;
+}

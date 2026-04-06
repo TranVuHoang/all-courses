@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Label - Auto focus</title>
+  </head>
+  <body>
+    <h1>Input text password</h1>
+
+    <!--
+      để thiết lập Auto focus cho thẻ input:
+     -> ở thẻ label cần có thuộc tính: for="username"
+     -> ở thẻ input cần có thuộc tính: id="username"
+     -->
+    <form action="">
+      <label for="username">Tên đăng nhập:</label><br /><br />
+      <input`
+        type="text"
+        id="username"
+        name="username"
+        placeholder="username"
+      /><br /><br />
+      <label for="password">Mật khẩu:</label><br /><br />
+      <input
+        type="password"
+        id="password"
+        name="password"
+        placeholder="password"
+      />
+    </form>
+  </body>
+</html>

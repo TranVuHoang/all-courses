@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .group-box {
+        margin: 0 auto;
+        width: 960px;
+        position: relative;
+        min-height: 450px;
+        border: 2px solid red;
+      }
+      .box {
+        width: 200px;
+        height: 200px;
+        position: absolute;
+        text-align: center;
+        line-height: 200px;
+      }
+      .box-a {
+        background: orange;
+      }
+      .box-b {
+        background: #06cce6;
+        top: 0;
+        right: 0;
+      }
+      .box-c {
+        background: #c44444;
+        bottom: 0;
+        left: 0;
+        margin-top: 20px;
+      }
+      .box-d {
+        background: purple;
+        bottom: 0;
+        right: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="group-box">
+      <div class="box box-a">Box A</div>
+      <div class="box box-b">Box B</div>
+      <div class="box box-c">Box C</div>
+      <div class="box box-d">Box D</div>
+    </div>
+  </body>
+</html>

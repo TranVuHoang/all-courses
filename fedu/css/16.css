@@ -1,0 +1,42 @@
+.to {
+  display: flex;
+  width: 960px;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+.so1 {
+  border: 1px solid #000;
+  width: 15%;
+  padding: 2px;
+  align-self: center;
+}
+.so2 {
+  display: flex;
+  border: 1px solid #000;
+  width: 65%;
+  padding: 10px;
+  justify-content: space-between;
+}
+.sub-1 {
+  width: 33.33%;
+  text-align: justify;
+  padding: 10px;
+}
+.sub-2 {
+  width: 33.33%;
+}
+.sub-3 {
+  width: 33.33%;
+}
+.so3 {
+  border: 1px solid #000;
+  width: 20%;
+  text-indent: 20px;
+  padding: 10px;
+}
+img {
+  width: 100%;
+}
+.border-radius {
+  border-radius: 20px;
+}

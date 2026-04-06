@@ -1,0 +1,106 @@
+/*
+selector {
+    property: value;
+}
+
+Selector:
+Tags: p, div, h1, span...
+Class: .demo, .header, .footer...
+ID: #container, #footer
+
+property: color, background, width, heigh,...
+value: red, blue, yellow, green, grey, oliver light, new black(BAU), mat black, red candy,
+SIA, BKA, WHA, REC, GYC, GNV, BLF, aqua blue, dark green, silver, white, black,
+
+*/
+html {
+  font-size: 62.5%;
+}
+
+p {
+  /* color: value; */
+  /* value of color:
+    name: red, yellow, green
+    hexa: #ffa400, #fff, #ff7870, #00faed, #666666 -> #666
+    rgb: rgb(0, 0, 0), rgb(255, 255, 255)
+    rgba(0, 0, 0, 0.5)
+    a <-> alpha(opacity- độ mờ) 0->1
+    */
+  color: red;
+  color: #ffa400;
+}
+.background {
+  background-color: #00aefd;
+  /* width: 100px; */
+  min-height: 50px;
+  /* max-width: 50%; */
+  max-height: 200px;
+  overflow-y: auto;
+}
+.wrap {
+  width: 400px;
+}
+.background2 {
+  background-image: url("https://images.unsplash.com/photo-1761839257469-96c78a7c2dd3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDF8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw4fHx8ZW58MHx8fHx8");
+  width: 100%;
+  width: 100vw;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  object-fit: cover;
+}
+/* font-size: 100% = 16px */
+/* 1em = 1rem = 16px */
+.em {
+  width: 10em;
+  height: 10em;
+  font-size: 32px;
+  /* 1em = 32px */
+  background-color: #ffa400;
+  /* EM là đơn vị sẽ phụ thuộc vào thuộc tính font-size của chính nó hoặc phân tử chứa nó*/
+}
+.rem {
+  margin-top: 20px;
+  width: 10rem;
+  height: 10rem;
+  font-size: 32px;
+  background-color: #ff00bfb3;
+  /* rem là đơn vị sẽ phụ thuộc trực tiếp vào thuộc tính font-size của thẻ html  */
+  /* border: 2px solid; */
+  border-top: 2px solid red; /* thuộc tính viền lề trên*/
+  border-right: 5px solid blue;
+  border-bottom: 10px SOLID ORANGE;
+  border-left: 15px solid purple;
+  /* border-radius: 50%; */
+  outline: 10px solid #000000;
+}
+
+/* công thức quy đổi về đơn vị rem cho dễ sử dụng:
+  100% = 16px
+  => html {
+  font-size: 62.5%; <=> 1rem = 10px
+*/
+
+/*----------------------------*/
+/*2.9 thuộc tính margin
+/*----------------------------*/
+.margin {
+  width: 14rem;
+  height: 14rem;
+  background-color: red;
+  margin: 20px auto;
+  /* margin-top: 20px;
+  margin-right: 30px;
+  margin-left: 40px;
+  margin-bottom: 50px; */
+  /* viết rút gọn */
+  /* TH1: 1 giá trị -> top = right = bottom = left = 10px */
+  /* margin: 10px; */
+  /* TH2: 2 giá trị -> top = bottom = 20px; left = right = 40px */
+  /* margin: 20px 40px; */
+  /* TH3: 3 giá trị -> top = 10px; bottom = 30px; left = right = 20px */
+  /* margin: 10px 20px 30px; */
+  /* TH4: 4 giá trị -> top = 10px; right = 20px; bottom = 30px; left = 40px */
+  /* margin: 10px 20px 30px 40px; */
+}
