@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>margin</title>
+    <style>
+      .box {
+        width: 400px;
+        height: 200px;
+        background: violet;
+        padding: 50px 15px;
+        text-align: center;
+        margin-bottom: 30px;
+      }
+      .bg-red {
+        /* bị margin collap lấy cái giá trị margin có giá trị cao hơn */
+        margin-top: 20px;
+        background: red;
+      }
+      .mb-20 {
+        margin-bottom: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Box margin</h1>
+    <div class="box mb-20">A</div>
+    <div class="box bg-red">B</div>
+    <div class="box">A</div>
+    <div class="box bg-red">B</div>
+  </body>
+</html>

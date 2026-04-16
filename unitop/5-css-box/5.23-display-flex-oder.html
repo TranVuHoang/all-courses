@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>5.23 Display flex - Order</title>
+    <style>
+      .container {
+        display: flex;
+        background: blanchedalmond;
+        text-align: center;
+        justify-content: center;
+      }
+      .flex-item {
+        background: silver;
+        background: gray;
+        background: tomato;
+        padding: 30px;
+        width: 100px;
+        margin: 10px;
+        font-size: 18px;
+        text-align: center;
+        color: #fff;
+      }
+      .item-1 {
+        order: 2;
+      }
+      .item-3 {
+        order: 1;
+      }
+      .item-2 {
+        order: -1;
+      }
+      .item-4 {
+        order: 4;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Display flex order</h1>
+    <hr />
+    <div class="container">
+      <div class="flex-item item-1">1</div>
+      <div class="flex-item item-2">2</div>
+      <div class="flex-item item-3">3</div>
+      <div class="flex-item item-4">4</div>
+    </div>
+  </body>
+</html>

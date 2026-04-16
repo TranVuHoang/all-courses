@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>5.31 position relative</title>
+    <style>
+      .box {
+        width: 400px;
+        height: 200px;
+        background: tomato;
+
+        /* Tịnh tiến khối box cách mép trên 10 px */
+        position: relative;
+      }
+      .box:hover {
+        /* tịnh tiến một khối so với chính nó(chính relative) */
+        top: 20px;
+        left: 30px;
+        transition: 3s ease;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Thuộc tính css: position: relative;</h1>
+    <p>
+      Tác dụng: thuộc tính position relative giúp khối ở trạng thái <br />
+      có thể tịnh tiến khi kết hợp các thuộc tính phụ: top, right, bottom, left;
+    </p>
+    <hr />
+    <div class="box">Box</div>
+  </body>
+</html>

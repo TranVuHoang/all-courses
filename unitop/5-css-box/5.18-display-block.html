@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>5.18 display block</title>
+    <style>
+      .wrapper {
+        width: 960px;
+        margin: 0 auto;
+      }
+      .link-group {
+        display: flex;
+        list-style: none;
+        margin-top: 30px;
+      }
+      .link-group li {
+        margin-right: 5px;
+      }
+      .link-group li:hover a {
+        background: #87f6d1;
+        transition: 0.5s ease;
+      }
+      .nav-link {
+        text-decoration: none;
+        padding: 20px;
+        background: aquamarine;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1>display block</h1>
+      <hr />
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi beatae
+        architecto maxime recusandae repellendus possimus, aut ducimus eaque hic
+        exercitationem perspiciatis quas ad corporis id repudiandae culpa in!
+        Provident, ratione.
+      </p>
+      <ul class="link-group">
+        <li><a href="#" class="nav-link">Link 1</a></li>
+        <li><a href="#" class="nav-link">Link 2</a></li>
+        <li><a href="#" class="nav-link">Link 3</a></li>
+        <li><a href="#" class="nav-link">Link 4</a></li>
+      </ul>
+    </div>
+  </body>
+</html>

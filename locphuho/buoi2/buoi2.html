@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Buổi 2</title>
+    <!-- tạo favicon cho trang web -->
+    <link rel="shortcut icon" type="image/x-icon" href="./1.ico" />
+  </head>
+  <body>
+    <h1>DANH SÁCH CÁC THẺ HTML THƯỜNG DÙNG</h1>
+    <!--thẻ select  -->
+    <label for="cars">Chọn một loại xe:</label>
+    <select id="cars" name="cars">
+      <option value="vinfast">Vinfast</option>
+      <option value="volvo">Volvo</option>
+      <option value="saab">Saab</option>
+      <option value="fiat">Fiat</option>
+      <option value="audi">Audi</option>
+      <option value="honda">Honda</option>
+    </select>
+    <br /><br />
+
+    <!-- thẻ textarea để tạo một vùng nhập liệu lớn hơn, thường được sử dụng để nhập văn bản dài như bình luận, mô tả, hoặc nội dung bài viết. -->
+    <label for="comment">Nhập bình luận của bạn:</label>
+    <textarea id="comment" name="comment" rows="4" cols="50"></textarea>
+
+    <!-- thẻ ol để tạo một danh sách có thứ tự, thường được sử dụng để liệt kê các mục theo một trình tự cụ thể. Mỗi mục trong danh sách được đánh số tự động. -->
+    <ol>
+      <li>Mục 1</li>
+      <li>Mục 2</li>
+      <li>Mục 3</li>
+    </ol>
+
+    <!-- thẻ ul để tạo một danh sách không có thứ tự, thường được sử dụng để liệt kê các mục mà không cần đánh số. Mỗi mục trong danh sách được đánh dấu bằng một ký hiệu (thường là dấu chấm hoặc dấu gạch). -->
+    <ul>
+      <li>Mục A</li>
+      <li>Mục B</li>
+      <li>Mục C</li>
+    </ul>
+    <!-- thẻ div để tạo một vùng chứa (container) cho các phần tử khác, thường được sử dụng để nhóm các phần tử lại với nhau và áp dụng kiểu dáng hoặc bố cục cho chúng. Thẻ div không có ý nghĩa ngữ nghĩa cụ thể nào, nó chỉ đơn giản là một khối chứa. -->
+    <div>
+      <h2>Đây là một tiêu đề trong thẻ div</h2>
+      <p>Đây là một đoạn văn trong thẻ div.</p>
+    </div>
+
+    <!-- thẻ span để tạo một vùng chứa nhỏ hơn, thường được sử dụng để áp dụng kiểu dáng hoặc định dạng cho một phần cụ thể của văn bản hoặc một phần tử nhỏ trong một đoạn văn. Thẻ span không tạo ra một khối mới mà chỉ là một phần tử nội tuyến. Ví dụ: -->
+    <p>
+      Đây là một đoạn văn với
+      <span style="color: red">một phần được tô màu đỏ</span>.
+    </p>
+
+    <!-- thẻ form để tạo một biểu mẫu, thường được sử dụng để thu thập dữ liệu từ người dùng. Biểu mẫu có thể chứa các phần tử như input, select, textarea, và button để người dùng có thể nhập thông tin và gửi nó đến máy chủ. Ví dụ: -->
+    <form action="./buoi2.html" method="post">
+      <label for="name">Tên:</label>
+      <input type="text" id="name" name="name" autofocus />
+      <br /><br />
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" />
+      <br /><br />
+      <input type="submit" value="Gửi" />
+    </form>
+
+    <!-- thẻ iframe để nhúng một trang web khác vào trong trang hiện tại, thường được sử dụng để hiển thị nội dung từ một nguồn khác mà không cần rời khỏi trang hiện tại. Ví dụ: -->
+    <iframe
+      width="758"
+      height="426"
+      src="https://www.youtube.com/embed/o8ZBlGPSK98?list=RDo8ZBlGPSK98"
+      title="Đừng Hỏi Em Ổn Không (HUY PT REMIX) - H2K x Bo Bae ♫ Giá Như Đời Làm Gì Có Giá Như Remix 2026"
+      frameborder="0"
+      allow="
+        accelerometer;
+        autoplay;
+        clipboard-write;
+        encrypted-media;
+        gyroscope;
+        picture-in-picture;
+        web-share;
+      "
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen
+    ></iframe>
+
+    <!-- thẻ video để nhúng một video vào trong trang web, thường được sử dụng để hiển thị nội dung video mà không cần phải sử dụng một dịch vụ bên ngoài như YouTube. Ví dụ: -->
+    <video width="758" height="426" controls>
+      <source src="movie.mp4" type="video/mp4" />
+      Your browser does not support the video tag.</video
+    ><br />
+    <!-- thẻ audio để nhúng một tệp âm thanh vào trong trang web, thường được sử dụng để phát nhạc hoặc hiệu ứng âm thanh. Ví dụ: -->
+    <audio controls>
+      <source src="audio.mp3" type="audio/mpeg" />
+      Your browser does not support the audio tag.
+    </audio>
+
+    <!-- thẻ figure để nhóm một hình ảnh và chú thích của nó lại với nhau, thường được sử dụng để hiển thị hình ảnh cùng với mô tả hoặc chú thích liên quan. Ví dụ: -->
+    <figure>
+      <img src="https://picsum.photos/758/426" alt="Mô tả hình ảnh" />
+      <figcaption>Chú thích cho hình ảnh</figcaption>
+    </figure>
+
+    <!-- thẻ figcaption để cung cấp chú thích cho một hình ảnh hoặc một phần tử đa phương tiện khác, thường được sử dụng bên trong thẻ figure để mô tả hoặc giải thích nội dung của hình ảnh hoặc phần tử đó. Ví dụ: <figcaption>Đây là chú thích cho hình ảnh</figcaption> -->
+
+    <!-- thẻ picture để cung cấp nhiều nguồn hình ảnh khác nhau cho trình duyệt, thường được sử dụng để tối ưu hóa việc hiển thị hình ảnh trên các thiết bị khác nhau. -->
+    <picture>
+      <source srcset="image.webp" type="image/webp" />
+      <source srcset="image.jpg" type="image/jpeg" />
+      <img src="image.jpg" alt="Mô tả hình ảnh" />
+    </picture>
+
+    <!-- thẻ source để cung cấp một nguồn đa phương tiện cho các phần tử như video hoặc audio, thường được sử dụng bên trong thẻ video hoặc audio để chỉ định các tệp đa phương tiện khác nhau mà trình duyệt có thể chọn để phát. Ví dụ: <source src="movie.mp4" type="video/mp4" /> -->
+    <source src="audio.mp3" type="audio/mpeg" />
+  </body>
+</html>

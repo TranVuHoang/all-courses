@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>5.32 tịnh tiến khối con(absolute) so với khối cha(relative)</title>
+    <style>
+      .box-parent {
+        position: relative;
+        background: wheat;
+        width: 400px;
+        height: 400px;
+      }
+      .box-children-1 {
+        position: absolute;
+        background: tomato;
+        padding: 30px;
+        top: 50px;
+        left: 20px;
+      }
+      .box-children-2 {
+        position: absolute;
+        background: violet;
+        padding: 30px;
+        top: 10px;
+        right: 20px;
+      }
+      .box-children-3 {
+        position: absolute;
+        background: green;
+        padding: 30px;
+        bottom: 10px;
+        right: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>5.32 tịnh tiến khối con(absolute) so với khối cha(relative)</h1>
+    <p>
+      Tác dụng: Trượt khối con trên khối cha <br />
+      Thuộc tính position: absolute giúp một khối trôi nổi <br />
+      trên một khối cha bao quanh nó khi kết hợp với các thuộc tính phụ: top,
+      right, bottom, left.
+    </p>
+    <div class="box-parent">
+      Parent
+      <div class="box-children-1">Child-1</div>
+      <div class="box-children-2">Child-2</div>
+      <div class="box-children-3">Child-3</div>
+    </div>
+  </body>
+</html>

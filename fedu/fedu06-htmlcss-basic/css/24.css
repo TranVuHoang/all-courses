@@ -1,0 +1,27 @@
+.cot-trai {
+  font-family: "Segoe UI light", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 13px;
+  width: 500px;
+}
+.cot-trai img {
+  width: 100%;
+}
+.cot-trai a {
+  text-decoration: none;
+  color: gray;
+  font-size: 20px;
+}
+.cot-trai a:hover {
+  color: rgb(1, 123, 175);
+}
+.cot-trai h3 {
+  margin: 0;
+  padding: 0;
+}
+a.nguon {
+  text-decoration: none;
+  padding-right: 10px;
+}
+span.gio {
+  padding-right: 10px;
+}

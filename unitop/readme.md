@@ -419,6 +419,8 @@ selector {
 
 # 3.4 Cách comment code css
 
+===
+
 <pre>
   /* =======SECTION====== */
   /* -----Sub Section----- */
@@ -493,10 +495,17 @@ selector {
     font-size: 15px;
   }
 </pre>
-# 4.1 Thiết lập font chữ cho text
+
+# Phấn 4: Bộ thuộc tính css định dạng text
+
+## 4.1 Thiết lập font chữ cho text
+
 font-family: ...;
 Tác dụng:
 Thuộc tính định nghĩa font chữ cho text, Text có thể có một hoặc nhiều font
 Chú ý:
 Mỗi font cách nhau bởi dấu phẩy(,)
 font có nhiều từ có dấu
+
+## 4.2 Thiết lập font-zize cho text
+

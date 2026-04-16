@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3.13 - Selector Hover</title>
+    <style>
+      button {
+        background-color: #008cba;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+      }
+      button:hover {
+        transition: all 0.3s ease;
+        opacity: 0.95;
+        color: rgb(202, 224, 227);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Selector Hover ぁ</h1>
+    `Selector Hover` is used to select elements when the user hovers over them
+    with a pointing device, such as a mouse. It is commonly used to create
+    interactive effects on web pages, such as changing the color of a button
+    when the user hovers over it.
+    <h2>Example</h2>
+    <p>
+      To change the background color of a button when the user hovers over it:
+    </p>
+    <pre>
+    <code>
+      button {
+        background-color: #008cba;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        border-radius: 10px;
+      }
+      button:hover {
+        color: #ff0000;
+        transition: all 0.3s ease;
+      }
+    </code>
+  </pre>
+    <button>Hover me!</button>
+  </body>
+</html>

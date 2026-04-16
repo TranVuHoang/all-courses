@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Layout struct</title>
+    <style>
+      #wrapper {
+        width: 960px;
+        margin: 0 auto;
+      }
+      .text-center {
+        text-align: center;
+      }
+      .header {
+        background: green;
+        padding: 10px;
+        color: white;
+      }
+      .main {
+        min-height: 900px;
+        display: flex;
+      }
+      .content {
+        width: 60%;
+        min-height: 900px;
+        background: #e5e5e5;
+        padding: 5px;
+        text-align: center;
+      }
+      .sidebar {
+        width: 40%;
+        min-height: 900px;
+        text-align: left;
+        background: #939393;
+        text-align: center;
+        padding: 5px;
+      }
+      .footer {
+        background: green;
+        padding: 10px;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="wrapper">
+      <header class="header text-center">Header</header>
+      <main class="main">
+        <div class="content">Content</div>
+        <div class="sidebar">Sidebar</div>
+      </main>
+      <footer class="footer text-center">Footer</footer>
+    </div>
+  </body>
+</html>

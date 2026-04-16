@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Buoi 3</title>
+  </head>
+  <body>
+    <h1>Buổi 3 các thẻ html thường dùng</h1>
+    <!-- thẻ table để tạo một bảng, thường được sử dụng để hiển thị dữ liệu theo dạng hàng và cột. Một bảng bao gồm các phần tử như table, tr (table row), th (table header), và td (table data). Ví dụ: -->
+    <table border="1" cellpadding="10" cellspacing="0">
+      <thead>
+        <tr>
+          <th>Tên</th>
+          <th>Địa chỉ</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Nguyễn Văn A</td>
+          <td>123 Đường ABC, TP. HCM</td>
+        </tr>
+        <tr>
+          <td>Trần Thị B</td>
+          <td>456 Đường XYZ, Hà Nội</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- thẻ svg để tạo đồ họa vector, thường được sử dụng để vẽ các hình dạng, biểu đồ, hoặc các yếu tố đồ họa khác trên trang web. SVG (Scalable Vector Graphics) là một định dạng đồ họa vector có thể mở rộng mà không mất chất lượng. Ví dụ: -->
+    <svg width="100" height="100">
+      <circle
+        cx="50"
+        cy="50"
+        r="40"
+        stroke="black"
+        stroke-width="3"
+        fill="red"
+      />
+    </svg>
+
+    <!-- thẻ use để tái sử dụng một phần tử SVG đã được định nghĩa trước đó. Thẻ use cho phép bạn tham chiếu đến một phần tử SVG đã tồn tại và hiển thị nó nhiều lần trong cùng một tài liệu mà không cần phải sao chép mã của phần tử đó. Ví dụ: nếu bạn đã định nghĩa một hình dạng trong SVG, bạn có thể sử dụng thẻ use để hiển thị hình dạng đó ở nhiều vị trí khác nhau trên trang web mà không cần phải viết lại mã của hình dạng đó mỗi lần. -->
+
+    <svg width="200" height="100">
+      <defs>
+        <circle id="myCircle" cx="50" cy="50" r="40" fill="blue" />
+      </defs>
+      <use href="#myCircle" x="0" y="0" />
+      <use href="#myCircle" x="100" y="0" />
+    </svg>
+
+    <!-- thẻ defs để định nghĩa các phần tử SVG có thể được tái sử dụng trong tài liệu. Thẻ defs thường được sử dụng để chứa các phần tử như hình dạng, biểu đồ, hoặc các yếu tố đồ họa khác mà bạn muốn tái sử dụng nhiều lần trong cùng một tài liệu SVG. Các phần tử được định nghĩa trong thẻ defs sẽ không hiển thị trực tiếp trên trang web cho đến khi chúng được tham chiếu bằng thẻ use hoặc các phần tử khác trong SVG. Ví dụ: bạn có thể định nghĩa một hình dạng trong thẻ defs và sau đó sử dụng thẻ use để hiển thị hình dạng đó ở nhiều vị trí khác nhau trên trang web mà không cần phải viết lại mã của hình dạng đó mỗi lần. -->
+    <svg width="200" height="100">
+      <defs>
+        <rect id="myRect" width="50" height="50" fill="green" />
+      </defs>
+      <use href="#myRect" x="0" y="0" />
+      <use href="#myRect" x="60" y="0" />
+    </svg>
+
+    <!-- thẻ symbol để định nghĩa một phần tử SVG có thể được tái sử dụng trong tài liệu. Thẻ symbol tương tự như thẻ defs, nhưng nó cho phép bạn định nghĩa một phần tử SVG mà có thể được tham chiếu bằng thẻ use và có thể chứa các phần tử con khác như hình dạng, biểu đồ, hoặc các yếu tố đồ họa khác. Khi bạn sử dụng thẻ use để tham chiếu đến một phần tử được định nghĩa trong thẻ symbol, phần tử đó sẽ được hiển thị tại vị trí của thẻ use. Ví dụ: bạn có thể định nghĩa một biểu tượng trong thẻ symbol và sau đó sử dụng thẻ use để hiển thị biểu tượng đó ở nhiều vị trí khác nhau trên trang web mà không cần phải viết lại mã của biểu tượng đó mỗi lần. -->
+    <svg width="200" height="100">
+      <symbol id="mySymbol" viewBox="0 0 100 100">
+        <polygon points="50,10 90,90 10,90" fill="purple" />
+      </symbol>
+      <use href="#mySymbol" x="0" y="0" />
+      <use href="#mySymbol" x="60" y="0" />
+    </svg>
+
+    <!-- thẻ header để tạo một phần đầu của trang web, thường được sử dụng để chứa các yếu tố như tiêu đề, logo, và menu điều hướng. Thẻ header giúp xác định phần đầu của trang web và thường được sử dụng để cung cấp thông tin về nội dung của trang hoặc để tạo ra một khu vực dễ nhận biết cho người dùng khi họ truy cập vào trang web. Ví dụ: bạn có thể sử dụng thẻ header để chứa tiêu đề của trang web và một menu điều hướng để người dùng có thể dễ dàng truy cập vào các phần khác nhau của trang web. -->
+    <header>
+      <h1>Đây là tiêu đề của trang web</h1>
+      <nav>
+        <ul>
+          <li><a href="#home">Trang chủ</a></li>
+          <li><a href="#about">Giới thiệu</a></li>
+          <li><a href="#contact">Liên hệ</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- thẻ footer để tạo một phần chân của trang web, thường được sử dụng để chứa các yếu tố như thông tin bản quyền, liên kết đến chính sách bảo mật, và các liên kết khác liên quan đến trang web. Thẻ footer giúp xác định phần chân của trang web và thường được sử dụng để cung cấp thông tin bổ sung hoặc liên kết đến các phần khác của trang web mà người dùng có thể quan tâm khi họ đã cuộn xuống cuối trang. Ví dụ: bạn có thể sử dụng thẻ footer để chứa thông tin bản quyền và một số liên kết hữu ích cho người dùng khi họ truy cập vào trang web. -->
+    <footer
+      style="text-align: center; padding: 20px; background-color: #f1f1f1"
+    >
+      <p>&copy; 2023 My Website. All rights reserved.</p>
+    </footer>
+
+    <!-- thẻ section để tạo một phần riêng biệt trong trang web, thường được sử dụng để nhóm các phần tử liên quan lại với nhau và cung cấp một cấu trúc rõ ràng cho nội dung của trang web. Thẻ section giúp xác định các phần khác nhau của trang web và thường được sử dụng để tổ chức nội dung theo chủ đề hoặc mục đích cụ thể. Ví dụ: bạn có thể sử dụng thẻ section để nhóm các bài viết liên quan lại với nhau hoặc để tạo ra các phần riêng biệt cho các chủ đề khác nhau trên trang web. -->
+    <section>
+      <h2>Đây là một phần riêng biệt trong trang web</h2>
+      <p>Đây là nội dung của phần này.</p>
+    </section>
+
+    <!-- thẻ article để tạo một phần nội dung độc lập trong trang web, thường được sử dụng để chứa các bài viết, tin tức, hoặc các phần nội dung khác mà có thể tồn tại độc lập với phần còn lại của trang web. Thẻ article giúp xác định một phần nội dung cụ thể và thường được sử dụng để tổ chức nội dung theo chủ đề hoặc mục đích cụ thể. Ví dụ: bạn có thể sử dụng thẻ article để chứa một bài viết riêng biệt trên trang web, và mỗi bài viết có thể có tiêu đề, nội dung, và thông tin tác giả riêng biệt. -->
+    <article>
+      <h2>Đây là một bài viết độc lập</h2>
+      <p>Đây là nội dung của bài viết này.</p>
+      <p>Tác giả: Nguyễn Văn A</p>
+
+      <!-- thẻ nav để tạo một phần điều hướng trong trang web, thường được sử dụng để chứa các liên kết đến các phần khác nhau của trang web hoặc đến các trang khác. Thẻ nav giúp xác định một phần điều hướng cụ thể và thường được sử dụng để tổ chức các liên kết theo một cách có cấu trúc và dễ hiểu cho người dùng. Ví dụ: bạn có thể sử dụng thẻ nav để chứa một menu điều hướng với các liên kết đến các phần khác nhau của trang web, giúp người dùng dễ dàng truy cập vào các phần mà họ quan tâm. -->
+      <nav>
+        <ul>
+          <li><a href="#home">Trang chủ</a></li>
+          <li><a href="#about">Giới thiệu</a></li>
+          <li><a href="#contact">Liên hệ</a></li>
+        </ul>
+      </nav>
+
+      <!-- thẻ main để tạo một phần nội dung chính của trang web, thường được sử dụng để chứa nội dung quan trọng nhất của trang web mà người dùng sẽ tập trung vào khi họ truy cập vào trang. Thẻ main giúp xác định phần nội dung chính và thường được sử dụng để tổ chức nội dung theo chủ đề hoặc mục đích cụ thể. Ví dụ: bạn có thể sử dụng thẻ main để chứa các bài viết, tin tức, hoặc các phần nội dung khác mà bạn muốn người dùng chú ý đến khi họ truy cập vào trang web. -->
+      <main>
+        <h2>Đây là nội dung chính của trang web</h2>
+        <p>
+          Đây là nội dung quan trọng nhất mà người dùng sẽ tập trung vào khi họ
+          truy cập vào trang web.
+        </p>
+      </main>
+
+      <!-- thẻ style để định nghĩa các kiểu dáng CSS cho trang web, thường được sử dụng để áp dụng các quy tắc kiểu dáng cho các phần tử HTML trong tài liệu. Thẻ style có thể được đặt trong phần head của tài liệu hoặc trong phần body, và nó chứa các quy tắc CSS để xác định cách mà các phần tử HTML sẽ hiển thị trên trang web. Ví dụ: bạn có thể sử dụng thẻ style để định nghĩa màu sắc, kích thước, và kiểu chữ cho các phần tử trên trang web của bạn. -->
+      <style>
+        body {
+          font-family: Arial, sans-serif;
+          background-color: #f9f9f9;
+        }
+        h1 {
+          color: #333;
+        }
+        p {
+          color: #666;
+        }
+      </style>
+
+      <!-- thẻ no script để cung cấp nội dung thay thế cho người dùng khi trình duyệt của họ không hỗ trợ JavaScript hoặc khi JavaScript bị tắt. Thẻ no script giúp đảm bảo rằng người dùng vẫn có thể truy cập vào nội dung quan trọng của trang web ngay cả khi họ không thể sử dụng JavaScript. Ví dụ: bạn có thể sử dụng thẻ no script để hiển thị một thông báo cho người dùng biết rằng họ cần bật JavaScript để trải nghiệm đầy đủ các tính năng của trang web, hoặc để cung cấp một phiên bản đơn giản hơn của trang web mà không yêu cầu JavaScript. -->
+      <noscript>
+        <p>
+          Xin lỗi, trang web này yêu cầu JavaScript để hoạt động đúng. Vui lòng
+          bật JavaScript trong trình duyệt của bạn để trải nghiệm đầy đủ các
+          tính năng của trang web.
+        </p>
+      </noscript>
+
+      <!-- thẻ link để liên kết đến các tài nguyên bên ngoài như tệp CSS, biểu tượng favicon, hoặc các tài nguyên khác mà trang web cần để hoạt động đúng. Thẻ link thường được đặt trong phần head của tài liệu và có thể chứa các thuộc tính như rel (relationship), href (hyperlink reference), và type (type of resource) để xác định loại tài nguyên mà nó đang liên kết đến. Ví dụ: bạn có thể sử dụng thẻ link để liên kết đến một tệp CSS bên ngoài để áp dụng kiểu dáng cho trang web của bạn, hoặc để liên kết đến một biểu tượng favicon để hiển thị biểu tượng của trang web trên trình duyệt. -->
+      <link rel="stylesheet" href="styles.css" />
+    </article>
+  </body>
+</html>

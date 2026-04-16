@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>box sizing</title>
+    <style>
+      .box {
+        text-align: justify;
+      }
+      .box-1 {
+        width: 400px;
+        height: 200px;
+        padding: 15px;
+        border: 1px solid #000;
+        margin-bottom: 20px;
+      }
+      .box-2 {
+        box-sizing: border-box;
+        width: 400px;
+        height: 200px;
+        padding: 15px;
+        border: 1px solid #000;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Box sizing</h1>
+    <hr />
+    <h2>Box có không dụng box-sizing</h2>
+    <div class="box box-1">
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab tempore
+        velit itaque rem, incidunt asperiores soluta deserunt ducimus dolorem
+        quis saepe fuga magnam distinctio impedit aut mollitia, deleniti quaerat
+        repellat?
+      </p>
+    </div>
+
+    <h2>Box có sử dụng box-sizing</h2>
+    <div class="box box-2">
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab tempore
+        velit itaque rem, incidunt asperiores soluta deserunt ducimus dolorem
+        quis saepe fuga magnam distinctio impedit aut mollitia, deleniti quaerat
+        repellat?
+      </p>
+    </div>
+  </body>
+</html>

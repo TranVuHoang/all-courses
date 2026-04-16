@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3.14 - Selector Before and After</title>
+    <style>
+      * {
+        /* box-sizing: border-box; */
+        padding: 0;
+        margin: 0;
+      }
+      /* body {
+        background: linear-gradient(to right, #f0f0f0 50%, #ffffff 50%);
+      } */
+      /* cho một nửa là màu xám, một nửa là màu trắng  dùng before mà k dùng linear-gradient */
+      body {
+        position: relative;
+        margin: 0;
+        padding: 0;
+        min-height: 100vh; /* đảm bảo chiều cao của body đủ để hiển thị nội dung */
+        text-align: center;
+      }
+
+      body::before {
+        content: "";
+        position: absolute;
+        width: 50%; /* chiếm 1/2 màn hình */
+        height: 100%;
+        background: #fff0f0; /* màu xám */
+        z-index: -1;
+      }
+      /* body::after {
+        content: "ABC";
+        width: 50vw;
+        height: 100vh;
+        display: block;
+        background-color: #ef89ff;
+      } */
+      p::before {
+        content: "Before: ";
+        color: red;
+      }
+      p::after {
+        content: " :After ✅";
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Selector Before and After</h1>
+    `Selector Before` and `Selector After` are used to insert content before or
+    after an element. They are commonly used to add decorative elements or to
+    create complex layouts without adding extra HTML elements.
+    <h2>Example</h2>
+    To insert content before and after a paragraph:
+    <pre>
+      <code>
+      p::before {
+        content: "Before: ";
+        color: red;
+      }
+      p::after {
+        content: " :After";
+        color: blue;
+      }
+      </code>
+    </pre>
+    <p>This is a paragraph.</p>
+  </body>
+</html>

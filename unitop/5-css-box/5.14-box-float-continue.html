@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box float</title>
+    <style>
+      #wrapper {
+        width: 700px;
+        margin: 0 auto;
+      }
+      .text-center {
+        text-align: center;
+      }
+      .post-title {
+        text-decoration: none;
+        display: block;
+        margin-bottom: 20px;
+      }
+      .post-thumb {
+        display: block;
+        width: 200px;
+        float: left;
+        padding-right: 15px;
+      }
+      .post-thumb img {
+        width: 100%;
+      }
+      .clear-left {
+        clear: left;
+      }
+    </style>
+  </head>
+  <body>
+    <hr />
+    <div id="wrapper">
+      <h1>Box float</h1>
+      <hr />
+      <article>
+        <a href="#" class="post-title">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi, nihil!
+        </a>
+        <a href="#" class="post-thumb">
+          <img src="https://picsum.photos/800/400" alt="hinh-anh-minh-hoa" />
+        </a>
+        <p class="post-desc clear-left">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+          minima perferendis mollitia harum sequi iure omnis illum at ex, iste
+          quae, magnam ipsam eligendi nobis totam, quam quia fuga temporibus
+          sed. Repudiandae fugiat quidem obcaecati cum earum excepturi sint
+          quibusdam.
+        </p>
+      </article>
+      <hr />
+      <article>
+        <a href="#" class="post-title">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi, nihil!
+        </a>
+        <a href="#" class="post-thumb">
+          <img src="https://picsum.photos/800/400" alt="hinh-anh-minh-hoa" />
+        </a>
+        <p class="post-desc">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+          minima perferendis mollitia harum sequi iure omnis illum at ex, iste
+          quae, magnam ipsam eligendi nobis totam, quam quia fuga temporibus
+          sed. Repudiandae fugiat quidem obcaecati cum earum excepturi sint
+          quibusdam.
+        </p>
+      </article>
+    </div>
+  </body>
+</html>

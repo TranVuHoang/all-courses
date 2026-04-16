@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3.17 - Selector: Not</title>
+    <style>
+      p {
+        color: #ff00bb;
+        font-size: 1.2em;
+        margin: 10px 0;
+      }
+      p.highlight {
+        color: red;
+        font-weight: bold;
+      }
+      p:not(.highlight) {
+        color: #009b81;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>3.17 - Selector: Not</h1>
+    <p>
+      `Selector: Not` is used to select elements that do not match a specified
+      selector. It allows you to apply styles to elements that do not meet
+      certain criteria, which can be useful for excluding specific elements from
+      a style rule.
+    </p>
+    <h2>Example</h2>
+    <p>Item 1</p>
+    <p>Item 2</p>
+    <p class="highlight">Item 3</p>
+    <p>Item 4</p>
+    <p>Item 5</p>
+    <p>Item 6</p>
+  </body>
+</html>

@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3.16 - Selector: First and Last Child</title>
+    <style>
+      h1 {
+        color: #0e98c6;
+        font-size: 2em;
+        margin-bottom: 20px;
+      }
+      .wrapper .container:first-child {
+        color: blue;
+      }
+      .wrapper .container:last-child {
+        color: red;
+      }
+      ul li:first-child {
+        color: green;
+      }
+      ul li:last-child {
+        color: orange;
+      }
+      .example-3 li:nth-child(even) {
+        font-weight: bold;
+        color: #0095cb;
+      }
+      .example-3 li:nth-child(odd) {
+        font-weight: bold;
+        color: #d10386;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>3.16 - Selector: First and Last Child</h1>
+    <hr />
+    `Selector: First and Last Child` is used to select the first and last child
+    elements of a parent element. It allows you to apply styles to the first and
+    last child elements of a container, which can be useful for creating
+    specific layouts or emphasizing certain content.
+    <h2>Example</h2>
+    To select the first and last child elements of a container:
+    <pre>
+    <code>
+      .container:first-child {
+        color: blue;
+      }
+      .container:last-child {
+        color: red;
+      }
+    </code>
+    </pre>
+    <!-- Note: The :first-child and :last-child selectors target the first and last child elements of their parent, respectively. -->
+    <div class="wrapper">
+      <div class="container">First child</div>
+      <div class="container">Middle child</div>
+      <div class="container">Last child</div>
+    </div>
+    <pre>
+      ul {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      li:first-child {
+        color: green;
+      }
+
+      li:last-child {
+        color: orange;
+      }
+    </pre>
+    <ul>
+      <li>First item</li>
+      <li>
+        Second item
+        <ul>
+          <li>Nested first item</li>
+          <li>Nested second item</li>
+          <li>Nested last item</li>
+        </ul>
+      </li>
+      <li>Third item</li>
+    </ul>
+
+    <!-- Example 3 -->
+    <!-- Note: The :nth-child() selector targets elements based on their position within their parent -->
+    <ul class="example-3">
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+      <li>Item 4</li>
+      <li>Item 5</li>
+      <li>Item 6</li>
+      <li>Item 7</li>
+      <li>Item 8</li>
+    </ul>
+  </body>
+</html>

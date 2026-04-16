@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>6.4 Transform scale</title>
+    <style>
+      .box {
+        height: 50px;
+        line-height: 50px;
+        width: 200px;
+        padding: 50px;
+        background: tomato;
+        text-align: center;
+        text-transform: uppercase;
+        margin-left: 50px;
+        transition: 0.5s ease;
+        border-radius: 10px;
+        cursor: pointer;
+      }
+      .box:hover {
+        /* vừa phóng to lên x2, vừa xoay 360 độ  */
+        transform: scale(1.25) rotate(360deg);
+        transition: all 0.5s ease;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Transform: scale(value);</h1>
+    <p>
+      Tác dụng: <br />
+      Giúp thay đổi kích thước phần tử theo một tỉ lệ cho trước.
+    </p>
+    <hr />
+    <div class="box">Box</div>
+  </body>
+</html>

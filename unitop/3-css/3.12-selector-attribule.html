@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3.12 - Selector Attribute</title>
+    <style>
+      a[data-test] {
+        color: #7604b0;
+      }
+      a[data-test="example"] {
+        color: #04b076;
+      }
+      a[href="#facebook"] {
+        color: #b00404;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Selector Attribute</h1>
+    <p>
+      Selector attribute is used to select elements based on their attributes.
+      It can be used to select elements with specific attributes, or elements
+      with specific attribute values.
+    </p>
+    <a href="#google" data-test="google">Google</a> <br />
+    <a href="#zalo" data-test="zalo">Zalo</a><br />
+    <a href="#facebook" data-test="facebook">Facebook</a>
+    <h2>Examples</h2>
+    <p>To select all elements with the attribute "data-test":</p>
+    <pre>
+      <code>
+        [data-test] {
+        /* styles */
+      }
+      </code>
+  </pre>
+  </body>
+</html>

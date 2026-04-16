@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.menu-tren {
+  height: 30px;
+  background: #2fa1b3;
+  width: 100%;
+}
+.menu-ngang {
+  list-style: none;
+  width: 960px;
+  margin: 0 auto;
+  text-align: center;
+}
+.menu-ngang li {
+  display: inline;
+}
+.menu-ngang a {
+  color: white;
+  text-decoration: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-transform: uppercase;
+  font-size: 13px;
+  /* line-height: 30px; */
+  display: inline-block;
+  padding: 6px;
+  padding-bottom: 8px;
+  transition: 0.5s ease;
+}
+.menu-ngang a:hover {
+  background: #218493;
+  /* transition: 0.5s ease; */
+  /* padding-top: 3px;
+  padding-bottom: 11px; */
+}
