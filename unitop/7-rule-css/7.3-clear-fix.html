@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>7.3 clearfix - trống sập độ cao khối</title>
+    <style>
+      h1 {
+        text-align: center;
+      }
+      .wrapper {
+        width: 960px;
+        margin: 0 auto;
+        background: wheat;
+      }
+      .box {
+        float: left;
+        min-height: 600px;
+      }
+      .box-1 {
+        background: red;
+        width: 600px;
+      }
+      .box-2 {
+        background: blue;
+        width: 360px;
+      }
+
+      /* css chống sập độ cao */
+      .clear-fix {
+        display: block;
+        clear: both;
+      }
+      .clear-fix::after {
+        content: "";
+        display: block;
+        clear: both;
+        visibility: hidden;
+        line-height: 0;
+        height: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Clear-fix</h1>
+    <hr />
+    <!-- Cách 1 thêm class: clear-fix vào div bị sập độ cao -->
+    <!-- <div class="wrapper clear-fix">
+      <div class="box box-1">Box-1</div>
+      <div class="box box-2">Box-2</div>
+    </div> -->
+
+    <!-- Cách 2 thêm: <div class="clear-fix"></div> vào sau cùng của các div bên trong div bị sập độ cao-->
+    <div class="wrapper">
+      <div class="box box-1">Box-1</div>
+      <div class="box box-2">Box-2</div>
+      <div class="clear-fix"></div>
+    </div>
+  </body>
+</html>
