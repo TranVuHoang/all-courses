@@ -320,3 +320,155 @@ Sử dụng thẻ <body> trong thẻ <html>:
   </body>
 </html>
 ```
+
+## 2.20 Tìm hiểu về các thẻ meta
+
+<pre>
+  # 1. Thẻ meta
+  # 2. Thẻ meta charset
+  # 3. Thẻ meta title
+  # 4. Thẻ meta viewport
+  # 5. Thẻ meta open Graph
+</pre>
+
+` # 1. Thẻ meta`
+
+Thẻ `<meta>` sử dụng để cung cấp thêm thông tin và dữ liệu cho trang web.
+Thẻ meta là một trong số các thẻ tự đóng(tiếng Anh: self-closing tag), cách viết
+của nó chỉ đơn giản như ví dụ sau:
+
+```html
+<meta />
+```
+
+Khi sử dụng thẻ `<meta>` chúng ta cần khai báo thuộc tính để việc sử dụng thẻ này
+trở nên có ý nghĩa.
+Một số trường hợp sử dụng thẻ meta phổ biến:
+
+- Chỉ định bằng mã ký tự cho trang web.
+- Cung cấp mô tả trang web cho công cụ tìm kiếm.
+- Chỉ định cách hiển thị trang web trên nhiều thiết bị(PC, tablet, mobile).
+- Cung cấp thông tin của trang web cho trình thu thập dữ liệu của mạng xã hội(như facebook)
+<hr />
+
+`# 2. Thẻ meta charset`
+
+Đây là thẻ cần được khai báo tại vị trí đầu tiên trong thẻ `<head>`:
+
+```html
+<head>
+  <meta charset="UTF-8" />
+  ...
+</head>
+```
+
+Thẻ meta với `charset="UTF-8"` có tác dụng hỗ trợ hiển thị khác ký tự nằm ngoài
+A-Z. Ví dụ: Tiếng việt có dấu, tiếng Trung, tiếng Nhật, tiếng Ả Rập,...
+
+Nếu bạn không khai báo `meta charset` tại vị trí đầu tiên của thẻ `<head>` thì
+trong một số TH nội dung trang web chứa các ký tự phức tạp, trình duyệt sẽ cố gắng
+đoán bảng mã ký tự và có thể gây ra lỗi hiển thị không mong muốn.
+
+Điều trên ngày nay khó xảy ra. Các trang web ngày nay hầu hết được hiển triển khai
+trên các máy chủ web có hỗ trợ `UTF-8`. Vì vậy, khai báo `<meta charset="UTF-8" />` là không cần thiết trong TH này.
+
+Tuy nhiên, không vì lý do đó mà chúng ta không sử dụng thẻ `meta charset`. Thực tế,
+vẫn có những máy chủ không mặc định hỗ trợ charset. Để đảm bảo tính thống nhất về
+bảng mã ký tự cho trang web của bạn, mặc định chúng ta luôn sử dụng thẻ meta charset nhé.
+
+<hr />
+
+`# 3. Thẻ meta title`
+
+Tuy thẻ này không có từ `meta` nhưng vẫn nằm trong nhóm thẻ `meta`. Đây là thẻ
+chứa tiêu đề của trang web, tiêu đề này được sử dụng trong một số TH:
+
+- Hiển thị tiêu đề trang web trên thanh tab của trình duyệt.
+- Hiển thị tiêu đề trong kết quả của công cụ tìm kiếm(VD: Google Search)
+  Ví dụ sử dụng thẻ meta `<title>`:
+
+```html
+<title>HTML, CSS từ Zero đến Hero | by F8</title>
+```
+
+Luôn sử dụng thẻ `<title>`, đây được coi là điêu tất yếu để cung cấp thông tin
+trang web cho người dùng.
+
+<hr />
+
+`# 4. Thẻ meta viewport`
+
+Để tối ưu hoá việc hiển thị giao diện web trên nhiều thiết bị có kích cỡ màn hình
+khác nhau(như PC, tablet, mobile) bạn sẽ cần sử dụng thẻ `meta viewport`.
+
+Ví dụ sử dụng thẻ meta viewport:
+
+```html
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+```
+
+Nếu trang web của bạn không có thẻ `meta viewport` thì khi mở trên các thiết bị
+di động nội dung sẽ bị thu nhỏ, bạn phải phóng to để dễ dàng đọc được. Các trang
+web được xây dựng vào khoảng những năm 2010 thường gặp vấn đề này.
+
+Sau đó, trào lưu thiết kết web đáp ứng(hay: responsive web design) xuất hiện.
+Tới ngày nay, hầu hết mọi trang web đều được tối ưu hiển thị trên nhiều thiết bị,
+bao gồm cả mobile. Đương nhiên, các trang web được tối ưu cho đa thiết bị đều
+sử dụng thẻ meta viewport.
+
+Trong thẻ meta viewport, giá trị `width=device-width` nhằm yêu cầu trình duyệt đặt
+chiều rộng của trang bằng chiều rộng của thiết bị(PC, tablet, mobile). Giá trị `initial-scale=1.0` nhằm giữ đúng kích thước/ tỉ lệ mặc định của trang web.
+
+<hr />
+
+`# 5. Thẻ meta open Graph`
+
+Đây là các thẻ meta được trình thu thập nội dung củ a Facebook sử dụng, nhằm lấy
+thông tin của trang web phục vụ việc hiển thị trang web được chia sẻ trên mạng xã hội này.
+
+## 2.29 Boilerplate là gì và cách sử dụng
+
+Sử dụng HTML boilerplate
+
+```
+# 1. Boilerplate là gì
+# 2. Sử dụng Emmet tạo cấu trúc file html
+```
+
+`# 1. Boilerplate là gì?`
+
+Trong lập trình, boilerplate được coi là những đoạn code tiêu chuẩn hoá và tái sử
+dụng ở nhiều nơi mà ít có sự thay đổi. Thay vì chúng ta phải viết đi viết lại những
+đoạn code đó nhiều lần thì boilerplate thường được tạo sẵn bằng một cách nào đó giúp
+tiết kiệm thời gian hơn khi sử dụng (vd: phím tắt, cú pháp viết tắt,...)
+
+<hr />
+
+`# 2. Tạo cấu trúc HTML bằng emmet`
+
+Qua những bài học trước bạn phải tạo cấu trúc file HTML bằng cách viết code thủ công
+(ví dụ như: DOCTYPE, `<html>`, `<head>` và `<body>`). Tin vui là bạn không cần phải viết
+lặp lại chúng nhiều lần mỗi khi tạo file html mới nữa.
+Bạn có thể tạo nhanh bằng cách gõ `! + tab` như sau:
+
+```html
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+</html>
+```
+
+Đây là một trong số các tính năng của Emmet mà bạn sẽ được học sau một vài chương tới.
+Trong hầu hếtteh mọi trường hợp bạn chỉ cần thay đổi lại thuộc tính `lang` và nội dung thẻ `<title>`.
+
+```
+Tóm tắt:
+- Boilerplate được coi là những đoạn code được tiêu chuẩn hoá và tái sử dụng ở
+nhiều nơi mà ít khi có sự thay đổi.
+- Có thể tạo nhanh cấu trúc HTML cơ bản bằng cách gõ `! + tab`
+```

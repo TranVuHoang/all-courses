@@ -338,5 +338,52 @@ chiều rộng của trang bằng chiều rộng của thiết bị(PC, tablet, 
 
 `# 5. Thẻ meta open Graph`
 
-Đây là các thẻ meta được trình thu thập nội dung của Facebook sử dụng, nhằm lấy
+Đây là các thẻ meta được trình thu thập nội dung củ a Facebook sử dụng, nhằm lấy
 thông tin của trang web phục vụ việc hiển thị trang web được chia sẻ trên mạng xã hội này.
+
+## 2.29 Boilerplate là gì và cách sử dụng
+
+Sử dụng HTML boilerplate
+
+```
+# 1. Boilerplate là gì
+# 2. Sử dụng Emmet tạo cấu trúc file html
+```
+
+`# 1. Boilerplate là gì?`
+
+Trong lập trình, boilerplate được coi là những đoạn code tiêu chuẩn hoá và tái sử
+dụng ở nhiều nơi mà ít có sự thay đổi. Thay vì chúng ta phải viết đi viết lại những
+đoạn code đó nhiều lần thì boilerplate thường được tạo sẵn bằng một cách nào đó giúp
+tiết kiệm thời gian hơn khi sử dụng (vd: phím tắt, cú pháp viết tắt,...)
+
+<hr />
+
+`# 2. Tạo cấu trúc HTML bằng emmet`
+
+Qua những bài học trước bạn phải tạo cấu trúc file HTML bằng cách viết code thủ công
+(ví dụ như: DOCTYPE, `<html>`, `<head>` và `<body>`). Tin vui là bạn không cần phải viết
+lặp lại chúng nhiều lần mỗi khi tạo file html mới nữa.
+Bạn có thể tạo nhanh bằng cách gõ `! + tab` như sau:
+
+```html
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+</html>
+```
+
+Đây là một trong số các tính năng của Emmet mà bạn sẽ được học sau một vài chương tới.
+Trong hầu hếtteh mọi trường hợp bạn chỉ cần thay đổi lại thuộc tính `lang` và nội dung thẻ `<title>`.
+
+```
+Tóm tắt:
+- Boilerplate được coi là những đoạn code được tiêu chuẩn hoá và tái sử dụng ở
+nhiều nơi mà ít khi có sự thay đổi.
+- Có thể tạo nhanh cấu trúc HTML cơ bản bằng cách gõ `! + tab`
+```
