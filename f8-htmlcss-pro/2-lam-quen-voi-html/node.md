@@ -716,3 +716,239 @@ phần thẻ đóng.
 `<meta name="viewport" content="width=device-width, initial-scale=1.0">`
 - Các thuộc tính toàn cục có thể sử dụng cho mọi thẻ HTML. Ví dụ `lang`, `hidden`, `title`
 ```
+
+## 2.48 Chia sẻ các mẹo để viết HTML tốt hơn
+
+Mẹo để viết HTML tốt hơn
+
+```
+# 1. Viết thẻ mở và thẻ đóng trước
+# 2. Trình bày code ngắn gọn
+# 3. Một số sai lầm thường gặp
+```
+
+`# 1. Viết thẻ mở và thẻ đóng trước`
+
+Tuân thủ theo cách viết này, bạn sẽ không bao giờ quên thẻ đóng.
+Hãy bắt đầu với thẻ mở và thẻ đóng:
+
+```html
+<h1></h1>
+```
+
+Sau đó mới thêm nội dung:
+
+```html
+<h1>Hôm nay là một ngày đẹp trời!</h1>
+```
+
+Đối với thẻ đóng(self-closing tag), hãy bắt đầu với:
+
+```html
+<meta />
+```
+
+<hr />
+
+`# 2. Trình bày code ngắn gọn`
+
+Một bài văn tốt cần đúng chính tả. Người viết văn là người hành văn, người viết code là người hành code. Vậy viết code HTMLnhư thế nào cho đúng "chính tả"?
+
+Thẻ con thụt lề 1 dấu tab so với thẻ cha
+
+Để đảm bảo tính dễ đọc, tránh nhầm lẫn khi số lượng code HTML nhiều lên, các bạn luôn thụt lề cho thẻ con bằng 1 dấu `tab` so với thẻ cha nhé.
+
+ví dụ:
+
+```html
+<body>
+  <h1>Hôm nay là một ngày đẹp trời</h1>
+  <ul>
+    <li>Đầu mục 1</li>
+    <li>Đầu mục 2</li>
+    <li>Đầu mục 3</li>
+  </ul>
+</body>
+```
+
+Dưới đây là ví dụ cho việc trình bày không ngay hàng thằng lối:
+
+```html
+<pre>
+  <body>
+  <h1>Hôm nay là một ngày đẹp trời</h1>
+  <ul><li>Đầu mục 1</li>
+  <li>Đầu mục 2</li>
+  <li>Đầu mục 3</li></ul>
+  </body>
+</pre>
+```
+
+Thực tế, việc không ngay hàng thẳng lối có rất nhiều hình thái khác nhau, tuỳ vào
+cách viết của mỗi người. Nhưng điều này gây ra vấn đề chung đó là rất khó đọc và
+xác định định được các thẻ mở và thẻ đóng. Có thể dẫn tới việc viết thừa/thiếu
+thẻ mở/thẻ đóng, gây lỗi giao diện trang web.
+
+Không để dư các khoảng trắng
+
+Trong HTML, việc dư thừa các khoảng trắng hay các dấu ngắt dòng không gây
+lỗi giao diện. Tuy nhiên, chúng ta không có lý do gì để viết dư các khoảng
+trắng. Luôn đảm bảo viết code tối giản, đơn giản, không dư thừa các khoảng
+trắng, dẫu ngắt dòng không cần thiết.
+
+```html
+<body>
+  Nội dung trang web
+</body>
+```
+
+Dư khoảng trắng trước/sau `lang`:
+
+```html
+<html lang="en"></html>
+```
+
+Dư khoảng trắng giữa 2 thuộc tính:
+
+```html
+<a href="https://fullstack.edu.vn" title="Tới trang web của F8"></a>
+```
+
+Dư dấu ngắt dòng trước thẻ đóng của thẻ `<h1>`:
+
+```html
+<body>
+  <h1>Hôm nay là một ngày đẹp trời</h1>
+</body>
+```
+
+<hr />
+Ngắt dòng hợp lý
+Để đảm bảo tính dễ đọc cho code của các bạn khi viết HTML, các bạn cần tìm
+những điểm ngắt dòng hợp lý.
+
+Ví dụ, sử dụng dấu ngắt dòng hợp lý:
+
+```html
+<ul>
+  <li>Đầu mục 1</li>
+  <li>Đầu mục 2</li>
+  <li>Đầu mục 3</li>
+</ul>
+```
+
+Đặt các thẻ đúng vị trí
+
+Có một số trường hợp các thẻ HTML được thiết kế để luôn nằm trong một thẻ cha khác:
+thẻ `<head>`, `<body>` luôn là thẻ con trực tiếp của thẻ `<head>`:
+
+```html
+<html lang="en">
+  <head>
+    <!-- Các thẻ meta ở đây -->
+    <!-- Các đường link css ở đây -->
+    <!-- ... -->
+  </head>
+  <body>
+    <!-- Nội dung trang web -->
+  </body>
+</html>
+```
+
+Tình huống sử dụng sai:
+
+```html
+<html lang="en">
+  <head>
+    <!-- Các thẻ meta ở đây -->
+    <body>
+      <!-- Nội dung trang web -->
+    </body>
+  </head>
+  <h1>Hôm nay là một ngày đẹp trời!</h1>
+</html>
+```
+
+Có 2 điểm sử dụng chưa đúng:
+
+1. Thẻ `<body>` đang nằm trong thẻ `<head>`
+2. Thẻ `<h1>` đang là con trực tiếp của thẻ `<html>`
+
+Thẻ `<li>` luôn là thẻ con trực tiếp của thẻ `<ul>`, `<ol>`:
+
+```html
+<!-- Unordered list -->
+<ul>
+  <li>Đầu mục 1</li>
+  <li>Đầu mục 2</li>
+  <li>Đầu mục 3</li>
+</ul>
+<!-- Ordered list -->
+<ol>
+  <li>Đầu mục 1</li>
+  <li>Đầu mục 2</li>
+  <li>Đầu mục 3</li>
+</ol>
+```
+
+Tình huống sử dụng chưa đúng:
+
+```html
+<!-- Unordered list -->
+<ul>
+  <li>Đầu mục 1</li>
+  <li>Đầu mục 2</li>
+  <li>Đầu mục 3</li>
+  <p>Some paragraph</p>
+</ul>
+```
+
+Điểm sai ở đây là thẻ `<p>` đang là thẻ con trực tiếp của thẻ `<ul>`.
+
+`# 3. Một số sai lầm thường gặp khác`
+
+Khi mới học. chúng ta thường gặp khó khăn trong việc học cú pháp. Nhiều khi,
+chỉ một lỗi cú pháp nhỏ có thể lấy đi thời gian cả ngày của bạn.
+
+Quên http, https cho thuộc tính href
+
+Ví dụ, chuyển tới trang web `google.com` khi nhấn vào thẻ `<a>` bạn sẽ làm như nào?
+Như này là sai:
+
+```html
+<a href="google.com">Tới Google</a>
+```
+
+Vì một URL cần bắt đầu với phần giao thức (http, https). TH sử dụng đúng sẽ như sau:
+
+```html
+<a href="https://google.com">Tới Google</a>
+```
+
+Mở/đóng thẻ sai thứ tự
+
+Ví dụ trong trường hợp sử dụng kết hợp nhiều thẻ cùng 1 lúc.
+Thay vì làm đúng như thế này:
+
+```html
+<p><b>Hôm nay</b> là một ngày đẹp trời</p>
+```
+
+Bạn có thể nhầm thành như thế này:
+
+```html
+<p><b> Hôm nay</p> là một ngày đẹp trời</b>
+```
+
+Đương nhiên, trong tình huống này kết quả sẽ không được như bạn mong đợi.
+Vậy nên, hãy luôn viết thẻ mở và thẻ đóng trước bạn nhé.
+
+```
+Tóm tắt:
+- Luôn viết cú pháp mở/đóng thẻ trước, sau đó mới viết nội dung
+- Sử dụng thụt lề bằng 1 dấu tab cho các thẻ con
+- Không viết dư thừa các khoảng trắng và các dấu ngắt dòng
+- Sử dụng dấu ngắt dòng hợp lý, đảm bảo code dễ đọc
+- Đặt các thẻ đúng vị trí. Ví dụ: <li> luôn là con trực tiếp của thẻ <ul>, <ol>
+- Luôn sử dụng https cho các URL trong thuộc tính href
+```
