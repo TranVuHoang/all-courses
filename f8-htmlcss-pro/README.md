@@ -610,3 +610,194 @@ thuộc tính `src`
 - Thẻ `ul`, `li` để hiển thị danh sách không có thứ tự
 - Thẻ `ol`, `li` đê hiển thị danh sách có thứ tự.
 ```
+
+## 2.34 Các thẻ HTML thông dụng #2
+
+Sử dụng HTML boilerplate
+Tương tự như thử thách trước, hãy sử dụng Emmet để thêm nhanh HTML boilerplate
+và làm những yêu cầu sau:
+
+- Chỉ định ngôn ngữ cho trang web là tiếng Việt
+- Sửa nội dung `<title>` thành `Trang web đầu tiên của tôi`
+- Thêm 1 thẻ `h1` vào trong `body`, có nội dung: `Nội dung đầu tiên của tôi`
+<hr />
+
+```html
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trang web đầu tiên của tôi</title>
+  </head>
+  <body>
+    <h1>Nội dung đầu tiên của tôi</h1>
+  </body>
+</html>
+```
+
+## 2.41 Tìm hiểu về thuộc tính trong HTML
+
+Thuộc tính trong HTML
+
+```
+# 1, Thuộc tính là gì?
+# 2. Thuộc tính toàn cục
+```
+
+`# 1. Thuộc tính là gì?`
+
+Thuộc tính (tiếng Anh: attribute) được dùng để bổ sung thêm thông tin và dữ liệu
+cho các thẻ HTML. Các thuộc tính có dạng `key="value"` và luôn được viết trong
+thẻ mở của các thẻ HTML. (không bao giờ được viết trong thẻ đóng).
+
+Thực tế, các bạn đã được làm quen với một số thuộc tính của thẻ HTML rồi đó.
+
+Thuộc tính `lang` trong thẻ `<html>`:
+
+```html
+<html lang="en">
+  ...
+</html>
+```
+
+Ví dụ trên có 1 thuộc tính là `lang="vi"` nó gôm 2 thành phần:
+
+1. lang
+2. vi
+
+Trong đó, `lang` được gọi là khoá của thuộc tính, `vi` được gọi là giá trị của
+thuộc tính.
+Cùng quan sát một số ví dụ sử dụng thuộc tính thường gặp khác:
+
+Thuộc tính `charset` trong thẻ `<meta>`
+
+```html
+<meta charset="UTF-8" />
+```
+
+Thuộc tính `href` trong thẻ `<a>`
+
+```html
+<a href="#" noreference noopener>Đoạn văn bản có thể nhấn</a>
+```
+
+Thuộc tính `src` trong thẻ `<img>`
+
+```html
+<img src="./images/1.png" alt="thay-the-khi-hinh-anh-khong-xuat-hien" />
+```
+
+Nhiều thuộc tính
+Bạn có thể sử dụng đồng thời nhiều thuộc tính trong một thẻ HTML, mỗi thuộc tính
+(mỗi cặp key="value") được cách nhau bởi một khoảng trắn.
+
+Thuộc tính `name` và `content` trong thẻ `<meta>` viewport:
+
+```html
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+```
+
+Trong ví dụ trên có 2 thuộc tính là:
+
+1. `name="viewport"`
+2. `content="width=device-width, initial-scale=1.0"`
+
+Trong thuộc tính thứ nhất có:
+
+1. key: `name`
+2. value: `viewport`
+
+Trong thuộc tính thứ hai có:
+
+3. key: `content`
+4. value: `width=device-width, initial-scale=1.0`
+
+<hr />
+
+`# 2. Thuộc tính toàn cục`
+
+Các thuộc tính được đề cập trong phần này có thể sử dụng cho toàn bộ các thẻ HTML.
+Vì vậy, chúng được gọi là thuọc tính toàn cục(tiếng Anh: Global Attribute).
+
+`Thuộc tính lang`
+
+Mặc định thuọc tính `lang` không được sử dụng cho trang web. Khi bạn sử dụng thuộc
+tính này cho thẻ `<html>` thì mặc định các thẻ trong trang web sẽ thừa kế lại thuộc
+tính lang này.
+
+Ví dụ:
+
+```html
+<html lang="vi">
+  ...
+  <body>
+    <!-- Các thẻ p này cũng sẽ có lang="vi" -->
+    <p>Hôm nay là một ngày đẹp trời</p>
+    <p>Hôm qua cũng là một ngày đẹp trời</p>
+  </body>
+</html>
+```
+
+Chính vì điều này, nên các trang web của bạn có nội dung là tiếng Việt thì chỉ
+cần thêm `<html lang="en>` là đủ
+
+Tuy nhiên, có một số tình huống trang web của bạn vẫn đề cập tới một ngôn ngữ
+khác ngôn ngữ chính của trang web. TH này, bạn có thể sử dụng thêm thuộc tinh `lang`
+cho thẻ chứa nội dung là ngôn ngữ khác.
+
+Ví dụ:
+
+```html
+<html lang="vi">
+  ...
+  <body>
+    <!-- Thẻ p này có lang="vi" -->
+    <p>Hôm nay là một ngày đẹp trời</p>
+    <!-- Thẻ p này có lang="en" -->
+    <p lang="en">Yesterday was also a beautiful day</p>
+  </body>
+</html>
+```
+
+`Thuộc tính hidden`
+
+Các thẻ HTML có thuộc tính hidden sẽ được ẩn khỏi giao diện trang web(bao gồm các thẻ con và nổi dung của nó).
+
+ví dụ:
+
+```html
+<p>Hôm nay là một ngày đẹp trời!</p>
+<p hidden>Hôm nay là một ngày đẹp trời!</p>
+```
+
+Sau này, bạn có thể dùng js để thêm/bớt thuộc tính `hidden` để làm cho một thẻ
+HTML được ẩn hiện trên giao diện trang web.
+
+`Thuộc tính title`
+
+Đây là thuộc tính bổ sung thông tin cho một thẻ HTML, nội dung của thuộc tính này sẽ
+hiển thị khi bạn đưa con trỏ chuột vào phần nội dung của nó.
+
+ví dụ:
+
+```html
+<h1 title="Hướng dẫn học HTML, CSS">Cách học HTML, CSS hiệu quả</h1>
+<a href="https://fullstack.edu.vn" title="Tới trang web của F8">
+  fullstack.edu.vn
+</a>
+```
+
+Ngoài ra, còn một số thuộc tính toàn cục chưa được đề cập tới trong bài này.
+Bạn có thể tham khảo thêm tại: w3C
+
+```
+Tóm tắt:
+- Thuộc tính(attribute) được dùng để bổ sung, thêm thông tin và dữ liệu cho
+các thẻ HTML
+- Các thuộc tính luôn luôn được thêm vào phần tử thẻ mở, không bao giờ thêm vào
+phần thẻ đóng.
+- Có thể sử dụng nhiều thuộc tính trong một thẻ HTML, ví dụ:
+`<meta name="viewport" content="width=device-width, initial-scale=1.0">`
+- Các thuộc tính toàn cục có thể sử dụng cho mọi thẻ HTML. Ví dụ `lang`, `hidden`, `title`
+```
