@@ -114,3 +114,158 @@ con của tiêu dề h1
 - Xác định các thẻ tiêu đề bằng ý nghĩa nội dung của nó, không phải dựa trên kích
 thước của nó.
 ```
+
+## 3.11 Thẻ tiêu đề h3, h4, h5, h6
+
+```
+# 1. Thẻ tiêu đề h3-h6
+# 2. Tránh bỏ qua các cấp độ
+# 3. Các thẻ tiêu đề và SEO
+```
+
+`# 1. Thẻ tiêu đề h3-h6`
+
+Qua các bài học trước,chúng ta đã tìm hiểu chi tiết về thẻ `<h1>`, `<h2>`.
+Trong bài này, chúng ta sẽ tìm hiểu về các thẻ `h` còn lại:
+
+- h3
+- h4
+- h5
+- h6
+
+Tương tự như cách thẻ `<h2>` liên quan tới thẻ `<h1>`:
+
+- Thẻ `<h3>` là tiêu đề con của thẻ `<h2>`
+- Thẻ `<h4>` là tiêu đề con của thẻ `<h3>`
+- Thẻ `<h5>` là tiêu đề con của thẻ `<h4>`
+- Thẻ `<h6>` là tiêu đề con của thẻ `<h5>`
+
+Các thẻ càng gần với `h6` càng ít được sử dụng. Bạn cũng không cần phải sử dụng
+tất cả các thẻ `h`, nó tuỳ thuộc vào nội dung bạn muốn hiển thị.
+
+Mục tiêu của việc sử dụng các thẻ `h` là để tạo ra cấu trúc phân cấp nội dung cho
+trang web của bạn. Gíup người dùng và công cụ tìm kiếm có thể dễ dàng hiểu được
+nội dung mà trang web đang đề cập.
+
+<hr />
+
+`# 2. Tránh bỏ qua các cấp độ`
+
+Khi sử dụng các thẻ `h`, bạn nên tránh bỏ qua các cấp độ tiêu đề. Nếu bạn đang
+sử dụng thẻ `h1`, thì sau đó nên là thẻ `h2`. Tránh bỏ qua thẻ `h2` mà đi tới luôn thẻ `h3`. Tương tự như vậy cho tới thẻ `h6`.
+
+<hr />
+
+`# 3. Các thẻ tiêu đề và SEO`
+
+Tối ưu hoá công cụ tìm kiếm(tiếng Anh: Search Engine Optimization - SEO) là hoạt
+động tối ưu trang web nhằm nâng cao thứ hạng trang web trong kết quả của công cụ
+tìm kiếm.
+
+Các tiêu dề có vai trò quan trọng trong SEO, nó cung cấp nội dung từ khoá và cấu
+trúc phân cấp nội dung trang web cho các công cụ tìm kiếm. Từ đó, các công cụ tìm
+kiếm như Google Search có thể đánh giá, phân tích và xếp hạng cho trang web.
+
+```
+Tóm tắt:
+- Trong HTML có 5 thẻ tiêu đề từ `h1-h6`. Trong đó `h1` là cấp cao nhất,
+`h6` là cấp thấp nhất.
+- Các thẻ càng gần với `h6` càng ít được sử dụng. Bạn cũng không cần phải
+sử dụng tất cả các thẻ `h`, nó tuỳ thuộc vào nội dung bạn muốn thể hiện
+- Tránh bỏ qua các cấp độ tiêu đề. Nếu bạn đang sử dụng thẻ `h1`, thì sau đó
+nên là thẻ `h2`. Tránh bỏ qua thẻ `h2` mà đi tới luôn thẻ `h3`
+- Các tiêu đè có vai trò quan trọng trong `SEO`, nó cung cấp nội dung từ khoá
+và cấu trúc phân cấp nội dung trang web cho các công cụ tìm kiếm.
+```
+
+## 3.15 Những sai lầm thường gặp
+
+```
+# 1. Sử dụng nhiều h1 trên cùng một trang
+# 2. Sử dụng thẻ h vì nó phù hợp với kích thước phông chữ
+# 3. Không tuân thủ cấu trúc tiêu đề
+# 4. Hoàn toàn không sử dụng thẻ tiêu đề
+# 5. Sử dụng thẻ tiêu đề cho nội dung không phải tiêu đề.
+```
+
+`# 1. Sử dụng nhiều h1 trên cùng một trang`
+
+Thẻ `<h1>` nên được sử dụng cho tiêu đề chính cho trang web hiện tại của bạn
+và nên đặt ở phần đầu nội dung của bạn. Nếu bạn có một trang nói chi tiết về
+sản phẩm Laptop DELL XPS 9710x thì bạn nên sử dụng thẻ `<h1>` với tên sp đó.
+
+```html
+<h1>Laptop DELL XPS 9710x</h1>
+```
+
+Nếu sau đó bạn có đề cập tới một chiếc laptop khác là Laptop Razer 15 2022 thì
+bạn nên có một trang riêng cho sản phẩm đó với tên của nó nằm trong thẻ `<h1>`
+
+<hr />
+
+`# 2. Sử dụng thẻ h vì nó phù hợp với kích thước phông chữ`
+
+Lỗi này gặp chủ yếu do các nhà phát triển trang web chưa biết cách sử dụng đúng
+các thẻ tiêu đề. Ví dụ: họ không sử dụng thẻ `<h1>` chỉ vì nó quá lớn so với thiết
+kế mà họ đang tìm kiếm, nên họ chọn sử dụng thẻ `<h2>` hoặc `<h3>`.
+
+Tuy nhiên, bạn chỉ cần sử dụng CSS để tạo kiểu cho các tiêu đề theo cách chúng ta muốn, vì vậy kích thước phông chữ không nên được dùng để xem xét khi quyết định lựa
+chọn các thẻ tiêu đề.
+
+<hr />
+
+`# 3. Không tuân thủ cấu trúc tiêu đề`
+
+Tất cả các tiêu đề nên tuân theo một cấu trúc rõ ràng. Vì vậy, một `<h2>` phải theo
+sau một `<h1>`, một `<h3>` phải theo sau `<h2>`,... Bạn tránh quên điều này và hãy
+nhớ thêm rằng bạn có thể dễ dàng thay đổi kích thước của các thẻ tiêu đề bằng CSS.
+
+Ví dụ, sau đây là một cấu trúc tiêu đề tốt:
+
+```html
+<pre>
+  <h1>Thú cưng phổ biến ở Việt Nam</h1>
+    <h2>Chó Husky ở Việt Nam</h2>
+      <h3>Chế độ ăn kiêng của chó Husky</h3>
+      <h3>Đặc điểm của cho Husky</h3>
+    <h2>Chuột Hamster ở Việt Nam</h2>
+      <h3>Chế độ ăn kiêng cho chuột Hamster</h3>
+      <h3>Đặc điểm của chuột Hamster</h3>
+</pre>
+```
+
+Ví dụ trên có thể không chính xác khi nói chó Husky và chuột Hamster ở Việt Nam. Nó
+chỉ là ví dụ, chúng ta sẽ không xét về việc 2 loài này có ở Việt Nam thật hay không nhé.
+
+<hr />
+
+`# 4. Hoàn toàn không sử dụng thẻ tiêu đề`
+Điều này thường xảy ra khi nhà phát triển web chưa hiểu được ý nghĩa và tầm quan
+trọng của việc sử dụng các thẻ tiêu đề.
+
+Kết hợp sử dụng các thẻ tiêu đề giúp tạo ra cấu trúc phân cấp nội dung. Giúp người
+dùng và công cụ tìm kiếm dễ dàng nắm bắt được nội dung trang web của bạn.
+
+<hr />
+
+`# 5. Sử dụng thẻ tiêu đề cho nội dung không phải tiêu đề.`
+Điều này thường xảy ra trong quá khứ, các nhà phát triển trang web thường sử dụng
+các "tricks" để "đánh lừa" công cụ tìm kiếm. Bởi vì họ biết rằng các công cụ tìm kiếm
+sẽ ưu tiên cho các nội dung trong thẻ `<h>`, họ thường spam các từ khoá SEO trong thẻ
+`h` trên trang web.
+
+Ngày nay, các công cụ tìm kiếm đã rất thông minh. Các "tricks" spam từ khoá trong các
+thẻ `h` không mang lại tác dụng, thậm chí còn phản tác dụng
+
+| Nếu cần lời khuyên cho việc làm SEO tốt. Mình khuyên các bạn nên chú trọng tới việc mang lại nội dung có giá trị thực sự cho người sử dụng. Các công cụ tìm kiếm ngày nay đủ thông minh để đánh gía được trang web của bạn thực sự tốt cho người
+dùng từ đó nâng cao thứ hạng của trang web trong kết quả tìm kiếm.
+
+```
+Tóm tắt:
+- Nên sử dụng tối đa một thẻ <h1> trên cùng 1 trang
+- Không sử dụng thẻ `h` chỉ vì nó phù hợp với kích thước font chữ
+- Nên tuân thủ cấu trúc các thẻ `h` để tạo ra cấu trúc phân cấp cho nội dung webpage
+- Làm SEO tốt là mang lại giá trị nội dung đích thực cho nguời sử dụng. Không nên
+spam các từ khoá trong các thẻ tiêu đề nhằm "đánh lừa" công cụ tìm kiếm.
+
+```
