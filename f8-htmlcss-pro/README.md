@@ -472,3 +472,141 @@ Tóm tắt:
 nhiều nơi mà ít khi có sự thay đổi.
 - Có thể tạo nhanh cấu trúc HTML cơ bản bằng cách gõ `! + tab`
 ```
+
+## 2.33 Các thẻ HTML thông dụng #1
+
+```
+# 1. Thẻ h1, h2,...h6
+# 2. Thẻ p
+# 3. Thẻ b, i, u
+# 4. Thẻ a
+# 5. Thẻ img
+# 6. Thẻ ul, li
+# 7. Thẻ ol, li
+```
+
+Lưu ý: Mục tiêu của bài học này là giúp các bạn làm quen với một số thẻ html thông dụng.
+Trong bài này, các thẻ được đề cập một cách khái quát và chưa đi vào chi tiết.
+Sau chương này chúng ta sẽ có những chương riêng biệt để học chi tiết về từng thẻ.
+
+`# 1. Thẻ h1, h2`
+
+Trong HTML có 6 thẻ được dùng để làm tiêu đề từ thẻ `h1` - `h6`. Trong đó có chữ `h`
+được viết tắt của từ `heading` (ý nghĩa: Tiêu đề, phần mở đầu). Trong bài này,
+mình giới thiệu trước cho các bạn 2 thẻ là `<h1>` và `<h2>` vì đây là 2 thẻ được
+sử dụng phổ biến nhất trong số các thẻ tiêu đề.
+Cách sử dụng:
+
+```html
+<h1>Nội dung làm tiêu đề chính</h1>
+<h2>Nội dung làm tiêu đề phụ</h2>
+```
+
+Thẻ `<h1>` được sử dụng làm tiêu đề chính, ví dụ tiêu đề của một bài blog.
+Các thẻ `<h2>` được sử dụng làm tiêu đề phụ, vd: dùng làm các tiêu đề hiển thị ý chính trong bài blog.
+
+Tiêu đề chính thường thấy trong: Tiêu đề của bài blog, tên sản phầm trên trang TMĐT, tên một bài học,...
+
+Tiêu đề phụ thường thấy trong các ý chính của một bài viết.
+
+`# 2. Thẻ p`
+
+Thẻ `<p>` để thể hiện các đoạn văn, `p` là viết tắt của `paragraph` (ý nghĩa: đoạn
+văn bản). Thẻ `<p>` được sử dụng để thể hiện các đoạn văn bản trong nội dung bài
+viết như: mô tả bài blog, các đoạn văn bản trong bài blog, các đoạn văn bản trong
+nội dung sản phẩm, nội dung các bình luận trên mạng xã hội...
+
+Cách sử dụng:
+
+```html
+<p>Đoạn văn 1</p>
+<p>Đoạn văn 2</p>
+```
+
+`# 3. Thẻ b, i, u`
+
+Đây là 3 thẻ có chức năng khá quen thuộc nếu các bạn đã sử dụng các trình soạn thảo
+văn bản. Trong đó `b` viết tắt của `bold`(ý nghĩa: in đậm), i viết tắt của `italic`(ý nghĩa: in nghiêng) và `u` viết tắt cua từ `underline` (ý nghĩa: gạch chân). Tương
+tự như trên trình soạn thảo word.
+
+Cách sử dụng:
+
+```html
+<b>Đoạn văn được in đậm</b>
+<i>Đoạn văn được in nghiêng</i>
+<u>Đoạn văn được gạch chân</u>
+```
+
+<hr />
+
+`# 4. Thẻ a`
+
+Khi truy cập các trang web bạn gần như luôn bắt gặp các thẻ `a`, thẻ này giúp tạo
+ra một siêu liên kết tới các trang web, các file, email,... Trong đó `a` viết tắt của `anchor` (ý nghĩa: điểm neo, neo một liên kết).
+Ví dụ:
+
+```html
+<a href="#" noreference noopener>Đoạn văn bản có thể nhấn</a>
+```
+
+<hr />
+
+`# 5. Thẻ img`
+
+Đây là thẻ dùng để hiển thị hình ảnh trên trang web. Trong đó `img` viết tắt của
+`image` (ý nghĩa: hình ảnh). Trong một trang web, hình ảnh được sử dụng rất phổ biến: logo trang web, ảnh đại diện, ảnh bìa, hình ảnh các mặt hàng trên trang web
+thương mại điện tử,...
+Cách sử dụng:
+
+```html
+<img src="./images/1.png" alt="thay-the-khi-hinh-anh-khong-xuat-hien" />
+```
+
+<hr />
+
+`# 6. Thẻ ul, li`
+
+Thẻ `ul` và `li` được sử dụng để tạo giao diện dạng danh sách, 2 thẻ này được sử dụng rất phổ biến trong nội dung các bài viết.
+Trong đó `ul` viết tắt của `unordered list` (ý nghĩa: danh sách không có thứ tự)
+và `li` viết tắt của `list item` (ý nghĩa: mục trong danh sách).
+
+Cách sử dụng:
+
+```html
+<ul>
+  <li>Nội dung 1</li>
+  <li>Nội dung 2</li>
+  <li>Nội dung 3</li>
+</ul>
+```
+
+<hr />
+
+`# 7. Thẻ ol, li`
+
+Gần giống như cặp thẻ `ul`, `li`. Đây cũng là 2 thẻ để tạo giao diện danh sách. Điểm
+khác biệt duy nhất nằm ở `ol`, `ol` viết tắt của `ordered list` (ý nghĩa: danh sách
+có thứ tự). Sử dụng thẻ này trong TH bạn muốn thể hiện rõ số thứ tự của các mục trong ds.
+
+Cách sử dụng:
+
+```html
+<ol>
+  <li>Nội dung 1</li>
+  <li>Nội dung 2</li>
+  <li>Nội dung 3</li>
+</ol>
+```
+
+```
+Tóm tắt:
+- Thẻ `h1` sử dụng làm tiêu đề chính, thẻ `h2` sử dụng làm tiêu đề phụ
+- Thẻ `p` sử dụng để chứa các đoạn văn bản
+- Thẻ `b`, `i`, `u` để in đậm, in nghiêng, gạch chân
+- Thẻ `a` tạo ra các liên kết có thể nhấn vào, sử dụng thuộc tính `href`
+để chứa liên kết.
+- Thẻ `img` để hiên thị hình ảnh, liên kết tới hình ảnh được khai báo trong
+thuộc tính `src`
+- Thẻ `ul`, `li` để hiển thị danh sách không có thứ tự
+- Thẻ `ol`, `li` đê hiển thị danh sách có thứ tự.
+```
