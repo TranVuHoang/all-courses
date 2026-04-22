@@ -79,3 +79,44 @@ chữ in đậm, kết quả hiển thị là giống nhau.
 - Thẻ <b> sử dụng khi đơn giản là muốn gây sự chú ý vào một nội dung
 - Thẻ <strong> sử dụng khi muốn thể hiện sự quan trọng, nghiêm trọng, khẩn cấp,...
 ```
+
+## 5.6 Thẻ strong với headings
+
+Tình huống sử dụng
+
+Khi làm việc, đôi khi chúng ta có thể bắt gặp một thiết kế tương tự như dưới đây.
+Ví dụ:
+
+```html
+<style>
+  .highlight {
+    -webkit-text-fill-color: transparent;
+    background: -webkit-linear-gradient(45deg, #5ebbff -33%, #a174ff 69%);
+    -webkit-background-clip: text;
+    background-clip: text;
+  }
+</style>
+<h1>
+  Cách dễ nhất để học <strong class="highlight">HTML CSS</strong> cho người mới
+  bắt đầu
+</h1>
+```
+
+Ví dụ trên mình đã sử dụng CSS để thay đổi màu chữ cho giống thiết kế. Tuy nhiên,
+vì chúng ta chưa học tới CSS nên mình sẽ giải thích ý nghĩa của chúng trong chương
+học về CSS nhé.
+
+Vậy trong ý 1, nhiệm vụ của chúng ta là thêm 1 thẻ HTML để bao bọc các từ
+"HTML CSS". Câu hỏi đặt ra ở đây là: Chúng ta sẽ sử dụng thẻ nào là hợp lý?
+
+Hãy ưu tiên chọn thẻ theo trình tự sau:
+
+1. Đúng về ngữ nghĩa (HTML Sematic), mục đích sử dụng của thẻ.
+2. Độ phù hợp về styles mặc định của thẻ so với thiết kế
+
+Nếu chúng ta phải cân nhắc về ngữ nghĩa và styles thì chúng ta nên chọn ngữ nghĩa, có 2 lý do chính:
+
+1. Mỗi thẻ HTML được tạo ra là có mục đích
+2. Ưu tiên ngữ nghĩa hơn vì styles có thể dùng CSS
+
+Cách lựa chọn thẻ HTML phù hợp ở trên có thể áp dụng trong mọi lúc bạn viết code HTML
