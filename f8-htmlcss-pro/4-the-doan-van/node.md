@@ -155,3 +155,188 @@ hoặc một địa chỉ.
 dung khác nhau để đảm bảo tính ngữ nghĩa. TH duy nhất bạn nên sử dụng thẻ `<br>`
 đó là để tạo dòng mới trong cùng một đoạn văn.
 ```
+
+## 4.15 Những sai lầm thường gặp
+
+```
+# 1. Thẻ p lồng thẻ p
+# 2. Không sử dụng thẻ p
+# 3. Sử dụng thẻ br để tạo khoảng cách
+# 4. Quá nhiều nội dung trong một thẻ p
+```
+
+`# 1. Thẻ p lồng thẻ p`
+
+Mỗi thẻ `<p>` là một đoạn văn bản độc lập. Không có tình huống một đoạn văn lại nằm
+trong một đoạn văn khác. Chính vì vậy, trong HTML thẻ `<p>` không thể sử dụng lồng
+trong thẻ `<p>`. Nếu bạn cố tình làm điều này, trình duyệt sẽ không làm việc đúng như
+bạn mong đợi, các thẻ `<p>` có thể bị tách ra khỏi nhau và sinh ra các thẻ `<p>` dư thừa.
+
+Ví dụ sử dụng đúng:
+
+```html
+<p>Đoạn văn thứ nhất</p>
+<p>Đoạn văn thứ hai</p>
+```
+
+Ví dụ sử dụng sai:
+
+```html
+<p>
+  Đoạn văn thứ nhất
+  <p>Đoạn văn thứ hai</p>
+</p>
+```
+
+Nhìn kết quả có thể chúng ta sẽ không nhận ra sự khác biệt, Tuy nhiên, khi kiểm tra
+các thẻ `<p>` này bạn sẽ thấy chúng có vấn đề.
+
+Trong video, mình có minh hoạ rõ điểm này.
+
+`# 2. Không sử dụng thẻ p`
+
+Trong một số tình huống, có thể bạn sẽ nhận thấy việc không dùng thẻ `<p>`
+cũng cho kết quả không khác biệt nhiều so với việc có dùng thẻ `<p>`.
+
+Ví dụ, có sử dụng thẻ `<p>`:
+
+```html
+<body>
+  <h1>Uống nước rất quan trọng</h1>
+  <p>
+    Ngay cả những người khoẻ mạnh cũng cần hình thành thói quen uống nước thường
+    xuyên và uống đủ nước theo khoa học.
+  </p>
+</body>
+```
+
+Ví dụ, không sử dụng thẻ `<p>`:
+
+```html
+<body>
+  <h1>Uống nước rất quan trọng</h1>
+  Ngay cả những người khoẻ mạnh cũng cần hình thành thói quen uống nước thường
+  xuyên và uống đủ nước theo khoa học.
+</body>
+```
+
+=> Không sử dụng thẻ `<p>` trong tình huống này có một số vấn đề:
+
+1. Không đảm bảo tính ngữ nghĩa
+2. Không thể CSS riêng cho đoạn văn bản
+3. Không tối ưu cho khả năng truy cập
+
+`# 3. Sử dụng thẻ br để tạo khoảng cách`
+
+Đây cũng là một sai lầm phổ biến. Thông thường, các nhà phát triển chưa hiểu rõ
+mục đích sử dụng thẻ `<br />` hoặc đôi khi họ hơi "lười" có thể dẫn tới sai lầm này.
+
+Trường hợp thường thấy là dùng thẻ `<br>` để ngăn cách hai đoạn văn. Trong khi, để
+đảm bảo đúng ngữ nghĩa nên sử dụng 2 thẻ `<p>` riêng biệt.
+
+Ví dụ, sử dụng chưa tốt:
+
+```html
+<p>
+  Ngay cả những người khoẻ mạnh cũng cần hình thành thói quen uống nước thường
+  xuyên và uống đủ nước theo khoa học.
+  <br />
+  <br />
+  Nước sẽ được cung cấp từ hai nguồn. Trong đó, nguôn nước từ thức ăn hàng ngày
+  chiếm khoảng 20-30% nhu cầu của cơ thế và các loại đồ uống bảo đảm khoảng
+  70-80% còn lại.
+</p>
+```
+
+Vấn đề tồn tại ở cách viết trên:
+
+1. Chưa đảm bảo tính ngữ nghĩa, 2 đoạn văn bản cần sử dụng 2 thẻ `<p>`.
+2. Chưa tối ưu cho khả năng tiếp cận trình đọc màn hình sẽ không thể di chuyển
+   giữa 2 đoạn văn(1 thẻ `<p>` trình đọc sẽ thấy 1 đoạn văn)
+
+Khi đó, cách viết tốt hơn là:
+
+```html
+<p>
+  Ngay cả những người khoẻ mạnh cũng cần hình thành thói quen uống nước thường
+  xuyên và uống đủ nước theo khoa học.
+</p>
+<p>
+  Nước sẽ được cung cấp từ hai nguồn. Trong đó, nguôn nước từ thức ăn hàng ngày
+  chiếm khoảng 20-30% nhu cầu của cơ thế và các loại đồ uống bảo đảm khoảng
+  70-80% còn lại.
+</p>
+```
+
+`# 4. Quá nhiều nội dung trong một thẻ p`
+Hãy xem hai ví dụ sau đây.
+Nhiều nội dung trong một thẻ p:
+
+```html
+<p>
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis quasi sequi ut
+  quas tempore nesciunt maiores delectus cum quibusdam explicabo? Dolores
+  adipisci temporibus delectus sint aperiam ad dolorum nemo alias cumque dolor
+  assumenda eligendi natus quae obcaecati explicabo in asperiores ipsa nihil,
+  omnis at. Molestiae incidunt ipsum obcaecati illo, deserunt similique? Et
+  nobis modi, cumque sit iusto dignissimos nihil. Minima eaque, ut recusandae
+  laboriosam ipsam explicabo? Minus quae, aspernatur incidunt eligendi, totam
+  dolorum earum itaque dignissimos nihil adipisci molestiae quisquam officiis
+  quas nobis eius fugit voluptas ut quos ducimus. Voluptatem laboriosam dicta
+  quae, culpa, velit laudantium dolores ab illum odit maiores nostrum odio amet
+  doloribus consequatur, fugit eaque? Laboriosam amet ut porro ad veritatis odit
+  labore iusto eius quae est in beatae molestiae dignissimos, quos similique,
+  quam eos, aut dolores hic consectetur libero iure illo dolorem! Id veniam,
+  itaque exercitationem cumque nihil quas qui reiciendis officiis quaerat. Saepe
+  accusamus, quidem culpa similique, maiores magni delectus facilis
+  exercitationem ad, perferendis nemo aliquid ut quibusdam suscipit incidunt
+  odio perspiciatis debitis vitae rerum dolore nobis iste aspernatur consequatur
+  nulla? Voluptatum, facere ipsa error rerum repellat asperiores, nihil
+  praesentium nam necessitatibus obcaecati odit voluptatem ex mollitia adipisci
+  iure aut magni atque eos laudantium aperiam?
+</p>
+```
+
+Chia nhỏ nội dung thành nhiều thẻ p:
+
+```html
+<p>
+  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque quidem hic,
+  eius, voluptatibus qui, obcaecati accusantium voluptas laborum unde ducimus
+  veritatis ullam rerum natus! Ipsam ipsa quisquam voluptas laboriosam
+  necessitatibus.
+</p>
+<p>
+  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque, itaque quos?
+  Iusto consequuntur doloremque eveniet reprehenderit necessitatibus corporis
+  quaerat harum itaque dolorem sint. Eos iusto voluptas qui illo modi quia?
+</p>
+<p>
+  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam, quis!
+  Dolorem veniam molestiae non esse illo, voluptate laboriosam aperiam
+  reiciendis voluptates molestias odio? Doloribus illum ab accusamus cumque
+  autem eum?
+</p>
+```
+
+Trong hai ví dụ trên, ví dụ 2 là cách làm tốt hơn, bởi vì:
+
+- Trình bày "thông thoáng" hơn, cảm giác dễ đọc hơn.
+- Tách thành các đoạn văn với những ý khác nhau
+- Đảm bảo về tính ngữ nghĩa khi thể hiện nhiều đoạn văn
+- Tối ưu hơn cho khả năng truy cập (Web accessibility)
+
+| Nắm chắc những kiến thức trong chương này có thể giúp bạn viết bài(blog, docs,vv)
+tốt hơn.
+
+```
+Tóm tắt:
+- Mỗi thẻ `<p>` là một đoạn văn bản độc lập. Không có tình huống một đoạn văn lại nằm
+trong một đoạn văn khác.
+- Luôn sử dụng thẻ `<p>` cho các đoạn văn bản để đảm bảo tính ngữ nghĩa và tối ưu khả
+năng truy cập
+- Thẻ <br> chỉ sử dụng với mục đích ngắt dòng trong các đoạn văn, không sử dụng để
+tạo khoảng cách lề giữa các dòng.
+- Tính ngữ nghĩa là rất quan trọng trong HTML, bản thân mỗi thẻ HTML được tạo ra là
+để đánh dấu giúp nội dung có ý nghĩa hơn.
+```
