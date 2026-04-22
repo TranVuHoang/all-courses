@@ -1378,3 +1378,92 @@ với các đoạn văn bản ngắn.
 - Mỗi the <p> sẽ luôn nằm trên 1 dòng mới. Ngoài ra, trình duyệt sẽ tự động thêm
 khoảng lề trên và dưới để ngăn cách giữa các thẻ <p>.
 ```
+
+## 4.8 Thẻ br
+
+```
+# 1. Giới thiệu thẻ br
+# 2. Cách sử dụng thẻ br
+```
+
+`# 1. Giới thiệu thẻ br`
+Thẻ ngắt dòng(tiếng Anh: break element) trong HTML là `<br />`, được sử dụng để tạo
+ra một dòng mới(ngắt dòng) trong cùng một đoạn văn. Đây là thẻ tự đóng.
+
+Trong thực tế
+, thẻ `<br>` rất hữu ích để tạo điểm ngắt dòng cho một bài thơ hoặc một địa chỉ.
+
+Ví dụ: một bài thơ:
+
+```html
+<p>
+  Mọc giữa dòng sông xanh <br />
+  Một bông hoa tím biếc <br />
+  Ơi con chim chiền chiện <br />
+  Hót chi mà vang trời <br />
+  Từng giọt long lanh rơi <br />
+  Tôi đưa tay tôi hứng.
+</p>
+```
+
+Trong HTML, nhiều khoảng trắng hoặc dấu ngắt dòng chỉ được coi là một khoảng trắng
+(một dấu cách). Vì vậy, nếu bạn sử dụng dấu ngắt dòng trong code thì kết quả có thể
+không như ý.
+
+Ví dụ không sử dụng `<br />`:
+
+```html
+<p>
+  Mọc giữa dòng sông xanh Một bông hoa tím biếc Ơi con chim chiền chiện Hót chi
+  mà vang trời Từng giọt long lanh rơi Tôi đưa tay tôi hứng.
+</p>
+```
+
+Có thể bạn sẽ nghĩ, mỗi thẻ `<p>` luôn bắt đầu trên một dòng mới. Vậy vì sao không
+sử dụng mỗi dòng bằng một thẻ `<p>`? chúng ta sẽ tìm hiểu điều này trong phần tiếp theo.
+
+<hr />
+
+`# 2. Cách sử dụng thẻ br`
+
+Hãy xem xét hai đoạn mã HTML qua hai ví dụ dưới đây:
+Ví dụ ngắt dòng bằng thẻ `<br />`:
+
+```html
+<p>
+  Mọc giữa dòng sông xanh <br />
+  Một bông hoa tím biếc <br />
+  Ơi con chim chiền chiện
+</p>
+```
+
+Ví dụ, ngắt dòng bằng việc sử dụng thẻ `<p>`:
+
+```html
+<p>Mọc giữa dòng sông xanh</p>
+<p>Một bông hoa tím biếc</p>
+<p>Ơi con chim chiền chiện</p>
+```
+
+Kết quả hiển thị trên trình duyệt của 2 đoạn mã trên gần như giống hệt nhau.
+Tuy nhiên, chúng khác nhau về ngữ nghĩa sử dụng và khả năng truy cập(web accessibility).
+
+Tuy hiển thị giống nhau. Nhưng theo bạn, đâu mới là cách sử dụng đúng đắn?
+
+Câu trả lời là:
+
+Thẻ `<br>` không nên được sử dụng để phân tách hai đoạn văn hoặc hai nội
+dung khác nhau để đảm bảo tính ngữ nghĩa. TH duy nhất bạn nên sử dụng thẻ `<br>`
+đó là để tạo dòng mới trong cùng một đoạn văn.
+
+```
+Tóm tắt:
+- Thẻ ngắt dòng(tiếng Anh:line break element) trong HTML là <br />, được
+sử dụng để tạo ra một dòng mới trong một đoạn văn. Đây là một thẻ tự đóng.
+- Trong thực tế, thẻ <br> rất hữu ích để tạo điểm ngắt dòng cho một bài thơ
+hoặc một địa chỉ.
+- Trong HTML, nhiều khoảng trắng hoặc dấu ngắt dòng chỉ được coi là một khoảng trắng
+- Thẻ `<br>` không nên được sử dụng để phân tách hai đoạn văn hoặc hai nội
+dung khác nhau để đảm bảo tính ngữ nghĩa. TH duy nhất bạn nên sử dụng thẻ `<br>`
+đó là để tạo dòng mới trong cùng một đoạn văn.
+```
