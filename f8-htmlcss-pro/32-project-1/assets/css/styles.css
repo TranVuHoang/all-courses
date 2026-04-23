@@ -37,7 +37,7 @@ a {
   max-width: calc(100% - 48px);
   margin: 0 auto;
 }
-/* Header */
+/* ------- Header -------*/
 .header {
   background: #e6f0ff;
   height: 100vh;
@@ -108,4 +108,11 @@ a {
   margin-top: 40px;
   min-width: 170px;
   font-size: 1.3rem;
+}
+
+.hero-img {
+  position: absolute;
+  bottom: 0;
+  /* right: 65px; */
+  right: calc((100vw - 1110px) / 2 - 100px);
 }
