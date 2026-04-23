@@ -177,3 +177,42 @@ a {
   font-weight: 400;
   line-height: 1.88; /* 187.5% */
 }
+
+.list-guide {
+  margin-top: 70px;
+  display: flex;
+  justify-content: center;
+}
+
+.guide-item {
+  margin: 0 70px;
+  text-align: center;
+}
+
+.guide-item .title {
+  margin-top: 26px;
+  color: #3b3c45;
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1.1; /* 110% */
+}
+
+.guide-item .link {
+  display: inline-block;
+  color: #0689ff;
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-top: 10px;
+}
+.guide-item .arrow {
+  margin-left: 8px;
+}
+
+.guide-cta {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+.guide-cta .btn {
+  min-width: 170px;
+}
