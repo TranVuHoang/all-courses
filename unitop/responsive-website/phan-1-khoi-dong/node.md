@@ -20,3 +20,8 @@ tablet, iphone, ipad, TV.
 - Bạn có được thuật toán tạo mọi loại menu website chạy trên nhiều thiết bị khác nhau.
 - Giúp bạn sở hữu công cụ cần thiết đi tuyển dụng giups có mức lương tốt hơn.
 
+## Bài 1.2 Cách vào nhóm hỗ trợ kèm cặp
+
+Nhóm kín hỗ trợ 24/24 messenger/ facebook
+
+
