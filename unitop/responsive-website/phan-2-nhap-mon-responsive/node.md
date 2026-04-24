@@ -16,3 +16,21 @@
 - Bấm vào "Device Toggle Toolbar" hoặc `cmd + shift + M`
 - Lựa chọn thiết bị khác nhau
 - Xem giao diện web trên từng thiết bị tương ứng.
+
+## Bài 2.4 Bật chế độ website chạy trên đa thiết bị viewport
+
+` Bật chế độ chạy web trên đa thiết bị`
+
+thêm thẻ meta là được:
+
+```html
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2.4 Bật chế độ website trên đa thiết bị</title>
+  </head>
+  <body></body>
+</html>
+```
