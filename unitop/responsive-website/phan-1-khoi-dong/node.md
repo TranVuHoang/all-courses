@@ -53,3 +53,14 @@ Lưu ý: Quá trình học có bất kỳ khó khăn nào nếu đã tìm cách 
 
 ## Bài 1.5 Phần mềm viết code nên dùng
 
+```
+Phần mềm 1: Server ảo Xampp
+link: https://unitop.com.vn/xampp
+
+Phần mềm 2: Soạn thảo code Visual Studio Code
+Link: https://unitop.com.vn/vsc
+
+Cài đặt thêm LIVE SERVER
+Lưu ý: Nếu bạn đã học HTML CSS 21 ngày thì bạn không cần cài lại phần mềm
+nữa.
+```
