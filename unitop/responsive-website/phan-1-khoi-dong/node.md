@@ -64,3 +64,16 @@ Cài đặt thêm LIVE SERVER
 Lưu ý: Nếu bạn đã học HTML CSS 21 ngày thì bạn không cần cài lại phần mềm
 nữa.
 ```
+
+## Bài 1.6 Cấu trúc thư mục Responsive Mastery
+
+` Cấu trúc thư mục học tập`
+
+<pre>
+unitop.vn/
+|-- ResponsiveMastery
+|   |--lesson/
+|   |   |-- intro.html
+|   |--excercises/
+|   |   |-- ex-1.html
+</pre>
