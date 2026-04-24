@@ -17,6 +17,14 @@
 - Lựa chọn thiết bị khác nhau
 - Xem giao diện web trên từng thiết bị tương ứng.
 
+## Bài 2.3 Cách kiểm tra Responsive bằng extension google: Viewport Resizer
+
+link cài extension: Viewport Resizer - Responsive Testing Tool:
+
+```
+https://chromewebstore.google.com/detail/viewport-resizer-ultimate/kapnjjcfcncngkadhpmijlkblpibdcgm
+```
+
 ## Bài 2.4 Bật chế độ website chạy trên đa thiết bị viewport
 
 ` Bật chế độ chạy web trên đa thiết bị`
@@ -34,3 +42,10 @@ thêm thẻ meta là được:
   <body></body>
 </html>
 ```
+
+## Bài 2.5 2 tiến trình xử lý ResponsiveMobile First và PC First
+
+` Hai thứ tự triển khai responsive`
+
+- Desktop first
+- Mobile first (Khuyên dùng)
